@@ -3,46 +3,30 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-body{
+body,html{
+    height: 100%;
     font-family: 'Nunito Sans', sans-serif;
-    overflow: hidden;
+    
 }
-
-.wave{
-    position: fixed;
-    width: 1152px;
-    height: 127px;
-    left: 0px;
-    top: 0px;
-}
-.wave2{
-    position:fixed;
-    width: 1152px;
-    height: 105px;
-    left: 0px;
-    top: 530px;
+body{
+    /* overflow: hidden; */
+    background:url('asset/wave.svg') no-repeat;
+    background-size: cover;
+    padding-bottom: 500px;
+    padding-top: 150px;
 }
 
 .container{
-    width: 90vw;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap :7rem;
-    padding: 0 2rem;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
 }
 
-.left h2{
-    position: absolute;
-    width: 531px;
-    height: 46px;
-    left: 60px;
-    top: 144px;
-
+.col-lg-5 h2{
+    margin-top: 20px;
     font-family: Nunito Sans;
     font-style: normal;
-    
+    font-weight: bold;
     font-size: 2rem;
     line-height: 49px;
     
@@ -51,39 +35,20 @@ body{
 
     color: #0175C2;
 }
-.left img{
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-    top: 250px;
-    
-}
-.img img{
-    width: 350px;
-    left: 150px;
-    position: absolute;
-}
 
-.login-container{
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	text-align: center;
-}
 
 form{
-	
-    width: 360px;
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 50px;
 }
 
-form h2{
-    margin: 5px 0;
+form h2{ 
     color: #0175C2;
-
     font-family: Nunito Sans;
-    font-style: normal;
+    font-style: bold;
+    font-weight: bold;
     font-size: 2rem;
-    
     align-items: center;
     text-align: center;
 }
@@ -91,12 +56,10 @@ form h2{
 form h3{
     margin: 15px 0;
     color: #0175C2;
-
     font-family: Nunito Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 2rem;
-   
     align-items: center;
     text-align: center;
 }
@@ -141,11 +104,12 @@ form h3{
     right: 50%;
 }
 .input-div.one{
-    margin-top: 0;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 .input-div.two{
-    margin-bottom: 4px;
+    margin-bottom: 30px;
 }
 
 .i{
@@ -189,8 +153,7 @@ form h3{
     font-style: normal;
     font-weight: bold;
 }
-
-.btn{
+.btn1{
     width: 190px;
     height: 40px;
     margin:2rem 0;
@@ -203,54 +166,14 @@ form h3{
     font-weight: bold;
     font-size: 18px;
     cursor: pointer;
-
-    align-items: center;
+    
+    /* align-items: center; */
     text-align: center;
     color: #FFFFFF;
-    transition: .5s;
-    background-size: 200%;
+    /* background-size: 200%; */
 }
-
-.btn.hover{
-    background-position: right;
-} 
-
-@media screen and (max-width: 1050px){
-    .container{
-        grid-gap: 5rem;
-    }
-}
-
-@media screen and (max-width: 1000px){
-    from{
-        width: 290px;
-    }
-    from h2{
-        font-size: 2.4rem;
-        margin: 8px 0;
-    }
-    .img img{
-        width: 400px;
-    }
-}
-
-@media screen and (max-width: 900px){
-    .left h2{
-        display: none;
-    }
-    .img{
-        display: none;
-    }
-    .container{
-        grid-template-columns: 1fr;
-    }
-    .wave{
-        display: none;
-    }
-    .wave2{
-        display: none;
-    }
-    .login-container{
-        justify-content: center;
-    }
+.btn1:hover{
+    background: white;
+    border: 2px solid #0175C2;;
+    color:#0175C2;
 }
