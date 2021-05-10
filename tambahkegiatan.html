@@ -50,7 +50,7 @@
                         <div class="col-md-6">
                                 <div class="form-field">
                                 <label class="label">Kategori Kegiatan</label>
-                                <input list="ktgs" name="ktg" id="ktg" class="form-control" placeholder="Pilih kategori kegiatan">
+                                <input list="ktgs" name="ktg" id="ktg" class="form-control" placeholder="Pilih kategori kegiatan" required="">
 
                                 <datalist id="ktgs">
                                 <option value="Lomba/Kompetisi">
@@ -61,34 +61,36 @@
                             </div>
                             <div class="form-field">
                                 <label class="label">Nama Kegiatan</label>
-                                <input type="text" class="form-control" placeholder="Isi nama kegiatan yang diselenggarakan" value=""/>
+                                <input type="text" class="form-control" placeholder="Isi nama kegiatan yang diselenggarakan" value="" required/>
                             </div>
                             
                             <div class="form-field">
                                 <label class="label">Tanggal</label>
-                                <input type="date" class="form-control" placeholder="Tanggal pelaksanaan" value=""/>
+                                <input type="date" class="form-control" placeholder="Tanggal pelaksanaan" value="" required/>
                             </div>
                             <div class="form-field">
                                 <label class="label">Waktu</label>
-                                <input type="time" class="form-control" placeholder="Waktu pelaksanaan" value=""/>
+                                <input type="time" class="form-control" placeholder="Waktu pelaksanaan" value="" required/>
                             </div>
                             <div class="form-field">
                                 <label class="label">Lokasi</label>
-                                <input type="text" class="form-control" placeholder="Lokasi pelaksanaan" value=""/>
+                                <input type="text" class="form-control" placeholder="Lokasi pelaksanaan" value="" required/>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-field">
                                 <label class="label">Deskripsi</label>
-                                <textarea class="form-control" placeholder="Deskripsikan kegiatan pada bagian ini" value=""></textarea>     
+                                <textarea class="form-control" placeholder="Deskripsikan kegiatan pada bagian ini" value="" required></textarea>     
                             </div>
                             <div class="form-field">
                                 <label class="label">Poster</label>
-                                <input type="file" class="form-control" placeholder="Tambahkan file" value=""/>
+                                <input type="file" class="form-control" placeholder="Tambahkan file" value="" required/>
                             </div>
-                        <button type="button" class="btn1">Berikutnya</button>
+                            <button type="button" class="btn1">Berikutnya</button>
+                            
                         </div>
-                    </div>
+                       
+                </div>
                     
             </div>
         </div>
