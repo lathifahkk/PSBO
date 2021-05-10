@@ -119,127 +119,6 @@ body{
     color: #CE6F64;
 }
 
-/* Search Produk */
-.topsection{
-    margin-top: 30px;
-}
-
-.input-group{
-    margin-left: 45px;
-}
-
-.topsection .input{
-    border: 0;
-	outline: none;
-	color: #8b7d77;
-}
-
-.search_wrap{
-    margin-left: 15px;
-}
-
-.search_wrap .search_box{
-	position: relative;
-	width: 945px;
-	height: 40px;
-    margin-left: 30px;
-}
-
-.search_wrap .search_box .input{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	padding: 10px 20px;
-	border-radius: 10px;
-	font-size: 18px;
-    background: #E6F0F4;
-}
-
-.search_wrap .search_box .btn{
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 50px;
-	height: 100%;
-	background: #0175C2;
-	z-index: 1;
-	cursor: pointer;
-}
-
-.search_wrap .search_box .btn:hover{
-	background: #70abd2;	
-}
-
-.search_wrap.search_wrap_3 .search_box .btn.btn_common .fas{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	color: #CE6F64;
-	font-size: 20px;
-}
-
-.search_wrap.search_wrap_3 .search_box .input{
-	padding-right: 80px;
-}
-
-.search_wrap.search_wrap_3 .search_box .input{
-	border-radius: 15px;
-}
-
-.search_wrap.search_wrap_3 .search_box .btn{
-	right: 0px;
-	border-radius: 0px 15px 15px 0px;
-}
-
-.search_box .input:hover{
-    opacity: 0.5;
-}
-
-.products{
-    z-index: 0;
-    margin-top: 40px;
-}
-
-/* Bagian Kategori */
-.category-head{
-    margin: 15px 0;
-    margin-left: 10px;
-}
-.category-head ul{
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-.category-title{
-    flex: 0 0 calc(16.6667% - 10px);
-    display: flex;
-    justify-content:center;
-    background: #E6F0F4;
-    padding: 10px;
-    color: #0175C2;
-    margin: 4px;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    border-radius: 10px;
-}
-.category-title:hover{
-    opacity: 0.5;
-}
-.category-title li{
-    padding: 0 10px;
-}
-.category-title span{
-    color: #222;
-}
-.active{
-    background-color: #0175C2 ;
-    color: #FFFF;
-}
-
 
 /* Bagian Produk Font Image*/
 .product-img img{
@@ -462,3 +341,10 @@ body{
     font-weight: lighter;
 }
 
+.upperjudul{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #0175C2;
+    margin-left: 50px;
+}
