@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+    
+}
+body{
+    /* overflow: hidden; */
+    background:url('asset/bg.svg') no-repeat;
+    background-size: cover;
+    padding-bottom: 500px;
+    padding-top: 130px;
+}
+
+.container{
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+}
+
+.col-lg-5 h2{
+    margin-top: 20px;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 49px;
+    
+    align-items: center;
+    text-align: center;
+
+    color: #0175C2;
+}
+
+
+form{
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 50px;
+}
+
+form h2{ 
+    color: #0175C2;
+    font-family: Nunito Sans;
+    font-style: bold;
+    font-weight: bold;
+    font-size: 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+form h3{
+    margin: 15px 0;
+    color: #0175C2;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    align-items: center;
+    text-align: center;
+}
+.input-div:after, .input-div::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    margin-left: 170px;
+    width: 0%;
+    height: 2px;
+    background-color: #0175C2;
+    transition: .3s;
+}
+
+.input-div::after{
+    right: 50%;
+}
+.input-div.focus .i{
+    color: #0175C2;
+}
+
+.input-div.focus div h5{
+    top: -5px;
+    font-size: 15px;
+}
+.input-div.focus:after, .input-div.focus:before{
+    width:50%;
+}
+
+.input-div{
+    position: relative;
+    display: grid;
+    color: #0175C2;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px;
+    border-bottom: 2px solid rgba(115, 169, 196, 0.18);
+    border-radius: 15px;
+}
+
+.input-div::after{
+    right: 50%;
+}
+.input-div.one{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.input-div.two{
+    margin-bottom: 30px;
+}
+
+.i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#73A9C3;
+    margin-left: 5px;
+    transition: .3s;
+}
+
+.input-div > div{
+    position: relative;
+    height: 45px;
+}
+
+
+.input-div > div h5{
+    position: absolute;
+    left: 10px;
+    top:50%;
+    transform: translateY(-50%);
+    color:#73A9C3;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    border: none;
+    background: none;
+    outline:none;
+    padding: 0.5rem 0.7rem;
+    font-size: 1.2rem;
+    color: #0175C2;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+}
+.btn1{
+    width: 190px;
+    height: 40px;
+    margin:2rem 0;
+    border: none;
+    background: #0175C2;
+    border-radius: 15px;
+    outline: none;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    
+    /* align-items: center; */
+    text-align: center;
+    color: #FFFFFF;
+    /* background-size: 200%; */
+}
+.btn1:hover{
+    background: white;
+    border: 2px solid #0175C2;;
+    color:#0175C2;
+}

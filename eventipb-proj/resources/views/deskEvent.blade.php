@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="deskevent.css">
+    <link rel="stylesheet" href="{{ URL::asset('css/deskevent.css') }}">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;800&display=swap" rel="stylesheet">   
@@ -11,6 +11,13 @@
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg></script>
 
     <title>Deskripsi Event</title>
+    <style>
+        body{
+            background:url('/image/bgIN.png') no-repeat;
+            background-size: cover;
+            padding-bottom: 500px;
+        }
+    </style>
 </head>
 <body>
     <div class="wrapper">
@@ -18,16 +25,14 @@
             <img src="{{url('/image/IPBEvent.png')}}" alt="IPB EVENT">
             <div class="left">
                 <ul>
-                  <li><a href="#">Beranda</a></li>
+                  <li><a href="/homeMhs">Beranda</a></li>
               </ul>
             </div>
             <div class="right">
                 <ul>
                   <li>
                     <a href="#">
-                      <p>Mahasiswa Ambisius<br> <span>G61110067</span></p>
-                      <img src="{{url('/image/user.svg')}}" alt="Admin" width="40">
-                      <i class="fas fa-angle-down"></i>
+                      <p>Mahasiswa Ambisius<br> <span>G61110067</span></p><img src="{{url('/image/user.svg')}}" alt="Admin" width="40"><i class="fas fa-angle-down"></i>
                     </a>
                      
                     <div class="dropdown">
@@ -50,7 +55,7 @@
                     <div class="col-md-7">
                         <div class="deskripsi">
                             <div class="card" style="width:600px;"> <!-- bisa ditambah (border: none;) buat ilangin bordernya*/-->
-                                <img class="card-img-top" src="{{url('/image/poster2.png)}}" alt="Card image" style="width:100%">
+                                <img class="card-img-top" src="{{url('/image/poster2.png')}}" alt="Card image" style="width:100%">
                                 <div class="card-body">
                                     <h4 class="upperjudul1">Deskripsi Event</h4>
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique volutpat justo lectus pellentesque amet justo, commodo. Risus vitae elementum odio in a. Suspendisse neque aliquam turpis gravida ut nibh elementum, duis. Eu risus curabitur vel lectus mauris, blandit. Vitae eu blandit sit eget sem. Posuere elit interdum ac mauris tellus a elementum tellus nam. Egestas viverra lobortis cursus quis dolor orci, sed parturient. Sed vitae duis auctor maecenas magna tortor, sit blandit massa.
@@ -70,7 +75,7 @@
                                 <div class="body-detail">
                                     <h6>Diselenggarakan oleh</h6>
                                     <div class="penyelenggara">
-                                        <img src="{{url('/image/user.png')}}" alt="Admin" width="40"><h4>BEM Fasilkom IPB University<br></h4>
+                                        <img src="{{url('/image/user.svg')}}" alt="Admin" width="40"><h4>BEM Fasilkom IPB University<br></h4>
                                     </div>
 
                                     <h6>Tanggal & Waktu</h6>
