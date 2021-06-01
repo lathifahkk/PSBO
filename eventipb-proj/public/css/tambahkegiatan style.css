@@ -10,13 +10,6 @@ body,html{
     /* overflow: hidden; */
 }
 
-body{
-
-    background:url('asset/bgIN.svg') no-repeat;
-    background-size: cover;
-    padding-bottom: 500px;
-}
-
 .wrapper{
     overflow: hidden;
     top: 0;

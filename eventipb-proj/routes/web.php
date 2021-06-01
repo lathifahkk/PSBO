@@ -25,3 +25,7 @@ Route::get('/homeMhs', function () {
 Route::get('/deskEvent', function () {
     return view('deskEvent');
 });
+
+Route::get('/pendaftaranMhs', function () {
+    return view('pendaftaranMhs');
+});

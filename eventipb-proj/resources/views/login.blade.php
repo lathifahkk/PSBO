@@ -11,6 +11,16 @@
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg></script>
 
     <title>Login Page</title>
+    <style>
+        
+    body{
+        /* overflow: hidden; */
+        background:url('/image/bg.png') no-repeat;
+        background-size: cover;
+        padding-bottom: 500px;
+        padding-top: 130px;
+}
+    </style>
 </head>
 <body>
     <section class="Form">

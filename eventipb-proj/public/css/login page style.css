@@ -8,13 +8,6 @@ body,html{
     font-family: 'Nunito Sans', sans-serif;
     
 }
-body{
-    /* overflow: hidden; */
-    background:url('asset/bg.svg') no-repeat;
-    background-size: cover;
-    padding-bottom: 500px;
-    padding-top: 130px;
-}
 
 .container{
 	justify-content: flex-start;
