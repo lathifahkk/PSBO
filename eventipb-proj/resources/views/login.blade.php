@@ -33,14 +33,24 @@
                     </div>
                     <div class="col-lg-7">
 
-                    @if(isset(Auth::user()->email_user))
-                        <script>window.location="/login/successlogin";</script>
-                    
+                    @if(isset(Auth::user()->email))
+                                <div class="alert alert-danger success-block">
+                                    <strong>Selamat Datang {{ Auth::user()->email }}</strong>
+                                    <br />
+                                    <a href= "{{ url ('/login/logout') }}">Logout</a>
+                                </div>
+                            else
+                                <script>window.location = "/login";</script>
+                            @endif
+
+                    @if(isset(Auth::user()->email))
+                        <script>window.location="/homeAdmin";</script>
                     @endif
                     @if ($message = Session::get('error'))
-                        <div class="alert alert-danger alert-block">
-                            <button type="button" class="close" data-dismiss="alert">X</button>
-                        </div>
+                    <div class="alert alert-danger alert-block">
+                        <button type="button" class="close" data-dismiss="alert">×</button>
+                        <strong>{{ $message }}</strong>
+                    </div>
                     @endif
 
                     @if(count($errors) > 0)
@@ -48,10 +58,9 @@
                             <ul>
                             @foreach($errors->all() as $error)
                                 <li>{{ $error }}</li>
-                                @endforeach
-                                </ul>
-                        </div>
-                            
+                            @endforeach
+                            </ul>
+                        </div>      
                     @endif
                         <form method='post' action="{{ url('/login/checklogin')}}">
                         {{ csrf_field() }}
@@ -66,7 +75,7 @@
                                     </div>
                                     <div>
                                         <h5>Email</h5>
-                                        <input class="input" type="email" name="email_user">
+                                        <input class="input" type="email" name="email">
                                     </div>
                                 </div>
                                 <div class="input-div two">
@@ -75,12 +84,12 @@
                                     </div>
                                     <div>
                                         <h5>Kata Sandi</h5>
-                                        <input class=" input" type="password" name="password_user">
+                                        <input class=" input" type="password" name="password">
                                     </div>
                                 </div>
                             </div>
                            
-                            <button type="submit" class="btn1"  value="Login" name="login">Masuk</button>
+                            <button type="submit" class="btn1" name="login" value="Login">Masuk</button>
                         </form>
                     </div>
                 </div>
@@ -108,10 +117,10 @@
             input.addEventListener("blur", remcl);
         });
 
-    //     function relocate_home()
-    //     {
-    //         location.href = "/homeMhs";
-    //     } 
+        //  function relocate_home()
+        //  {
+        //      location.href = "/homeMhs";
+        //  } 
     </script>
     <!-- <script type="text/javascript" src="login page main.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>

@@ -38,11 +38,11 @@
                                 <h3>LOGIN</h3>
                             </div>
 
-                            @if(isset(Auth::user()->email_user))
+                            @if(isset(Auth::user()->email))
                                 <div class="alert alert-danger success-block">
-                                    <strong>Selamat Datang {{Auth::user()->email_user}}</strong>
+                                    <strong>Selamat Datang {{ Auth::user()->email }}</strong>
                                     <br />
-                                    <a href= "{{ url ('/login/logout')}}">Logout</a>
+                                    <a href= "{{ url ('/login/logout') }}">Logout</a>
                                 </div>
                             else
                                 <script>window.location = "/login";</script>

@@ -25,13 +25,13 @@ Route::get('/', function () {
 // Route::get('login',[LoginController::class, 'postlogin']);
 Route::get('/login', 'App\Http\Controllers\LoginController@index')->name('login');
 Route::post('/login/checklogin', 'App\Http\Controllers\LoginController@checklogin')->name('checklogin');
-Route::get('/login/successlogin', 'App\Http\Controllers\LoginController@successlogin')->name('successlogin');
+Route::get('/login/homeAdmin', 'App\Http\Controllers\LoginController@successlogin')->name('successlogin');
 Route::get('/login/logout', 'App\Http\Controllers\LoginController@logout')->name('logout');
 
 // Route::post('/postlogin', 'LoginController@postLogin')->name('postLogin');
 
-Route::get('/homeMhs', function () {
-    return view('homeMhs');
+Route::get('/homeAdmin', function () {
+    return view('homeAdmin');
 });
 
 // Route::get('/deskEvent', function () {

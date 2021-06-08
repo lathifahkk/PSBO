@@ -17,18 +17,18 @@ class LoginController extends Controller
     function checklogin(Request $request)
     {
         $this->validate($request, [
-            'email'    =>  'required|email_user',
-            'password' =>  'required|password_user',
+            'email'    =>  'required|email',
+            'password' =>  'required|min:6',
         ]);
 
         $user_data = array(
-            'email'     => $request->get('email_user'),
-            'password'  => $request->get('password_user')
+            'email'     => $request->get('email'),
+            'password'  => $request->get('password')
         );
 
         if(Auth::attempt($user_data))
         {
-            return redirect('homeMhs');
+            return redirect('/homeAdmin');
         }
         else
         {
@@ -37,7 +37,7 @@ class LoginController extends Controller
     }
     function successlogin()
     {
-        return view('homeMhs');
+        return view('homeAdmin');
     }
 
     function logout()
