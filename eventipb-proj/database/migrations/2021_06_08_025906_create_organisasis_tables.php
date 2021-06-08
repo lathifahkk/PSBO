@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class TableAdmin extends Migration
+class CreateOrganisasisTables extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class TableAdmin extends Migration
      */
     public function up()
     {
-        Schema::create('admins', function (Blueprint $table) {
-            $table->bigIncrements('id_admin');
-            $table->unsignedBigInteger('id_userrr');
-            $table->foreign('id_userrr')
-                ->references('id_user')
-                ->on('users');
+        Schema::create('organisasis', function (Blueprint $table) {
+            $table->bigIncrements('id_org');
+            $table->string('tingkat');
+            
+            $table->foreignId('user_id')->constrained('users');
         });
     }
 
@@ -29,6 +28,6 @@ class TableAdmin extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('admins');
+        Schema::dropIfExists('organisasis');
     }
 }

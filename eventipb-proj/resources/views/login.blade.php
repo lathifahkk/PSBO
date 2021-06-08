@@ -32,9 +32,31 @@
                         <img src="{{url('/image/pana.png')}}" class="img" alt="">
                     </div>
                     <div class="col-lg-7">
-                        <form>
+
+                    @if(isset(Auth::user()->email_user))
+                        <script>window.location="/login/successlogin";</script>
+                    
+                    @endif
+                    @if ($message = Session::get('error'))
+                        <div class="alert alert-danger alert-block">
+                            <button type="button" class="close" data-dismiss="alert">X</button>
+                        </div>
+                    @endif
+
+                    @if(count($errors) > 0)
+                        <div class="alert alert-danger">
+                            <ul>
+                            @foreach($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                                @endforeach
+                                </ul>
+                        </div>
+                            
+                    @endif
+                        <form method='post' action="{{ url('/login/checklogin')}}">
+                        {{ csrf_field() }}
                             <div class="form-row">
-                                <h2>IPB University's Event</h2>
+                                <h2>IPB Universitys Event</h2>
                                 <h3>LOGIN</h3>
                             </div>
                             <div class="form-row">
@@ -43,8 +65,8 @@
                                         <i class="fas fa-user"></i>
                                     </div>
                                     <div>
-                                        <h5>ID Pengguna</h5>
-                                        <input class="input" type="text">
+                                        <h5>Email</h5>
+                                        <input class="input" type="email" name="email_user">
                                     </div>
                                 </div>
                                 <div class="input-div two">
@@ -53,19 +75,19 @@
                                     </div>
                                     <div>
                                         <h5>Kata Sandi</h5>
-                                        <input class=" input" type="password">
+                                        <input class=" input" type="password" name="password_user">
                                     </div>
                                 </div>
                             </div>
                            
-                            <button type="button" class="btn1" onclick=" relocate_home()">Masuk</button>
+                            <button type="submit" class="btn1"  value="Login" name="login">Masuk</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div> 
     </section>
-    <!-- <link rel="script" href="{{ URL::asset('js/login page main.js') }}" > -->
+    
     <script>
         const inputs = document.querySelectorAll(".input");
 
@@ -86,10 +108,10 @@
             input.addEventListener("blur", remcl);
         });
 
-        function relocate_home()
-        {
-            location.href = "/homeMhs";
-        } 
+    //     function relocate_home()
+    //     {
+    //         location.href = "/homeMhs";
+    //     } 
     </script>
     <!-- <script type="text/javascript" src="login page main.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>

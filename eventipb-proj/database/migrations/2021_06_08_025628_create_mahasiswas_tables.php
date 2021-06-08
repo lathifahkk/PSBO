@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class TableMhs extends Migration
+class CreateMahasiswasTables extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,11 @@ class TableMhs extends Migration
      */
     public function up()
     {
-        Schema::create('mhss', function (Blueprint $table) {      
-            $table->primary('nim')->unique();
+        Schema::create('mahasiswas', function (Blueprint $table) {
+            $table->string('nim')->unique();
             $table->string('departemen');
             
-            $table->unsignedBigInteger('id_userrr');
-            $table->foreign('id_userrr')
-                ->references('id_user')
-                ->on('users');
+            $table->foreignId('user_id')->constrained('users');
         });
     }
 
@@ -31,6 +28,6 @@ class TableMhs extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('mhss');
+        Schema::dropIfExists('mahasiswas');
     }
 }

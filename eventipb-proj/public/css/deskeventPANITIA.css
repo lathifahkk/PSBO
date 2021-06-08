@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+    /* overflow: hidden; */
+}
+
+body{
+    background:url('asset/bgIN.svg') no-repeat;
+    background-size: cover;
+    padding-bottom: 500px;
+}
+
+.wrapper{
+    overflow: hidden;
+    top: 0;
+    position: static;
+    width: 100%;
+    margin-top: 10px;
+    padding: 0 40px;
+    z-index: 1;
+}
+
+.wrapper .navbar ul li a{
+    list-style: none;
+    text-decoration: none;
+    transition: .3s;
+    color: #fff;
+    font-weight: bold;
+}
+
+.wrapper .navbar .left{
+    margin-right: auto;
+}
+  
+.wrapper .navbar .left ul{
+    height: 40px;
+    text-decoration: none;
+    list-style: none;
+    justify-content: center;
+}
+
+.wrapper .navbar .right ul li a{
+    display: flex;
+    height: 40px;
+}
+
+.wrapper .navbar .left ul li a{
+    justify-content: left;
+    padding: 10px 15px;
+}
+
+.wrapper .navbar .left ul li{
+    align-items: center;
+    display: inline;
+    line-height: 50px;
+}
+  
+.wrapper .navbar .left ul li,
+.wrapper .navbar .right img{
+    margin: 0 10px;
+    justify-content: center;
+}
+  
+.wrapper .navbar .right a{
+    text-align: right;
+    list-style: none;
+}
+  
+.wrapper .navbar .right a span{
+    font-size: 10px;
+}
+  
+.wrapper .navbar .right ul li{
+    position: relative;
+    list-style: none;
+}
+  
+.wrapper .navbar .right ul li .dropdown{
+    position: absolute;
+    top: 65px;
+    left: 40px;
+    right: 0px;
+    background: #5DAAD9;
+    padding: 10px 0px;
+    border-radius: 5px;
+    display: none;
+}
+
+.wrapper .navbar .right .dropdown ul li a{
+    align-items: center;
+}
+  
+.wrapper .navbar .right ul li .dropdown:before{
+    content: "";
+    align-items: left;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid;
+    border-color: transparent transparent #5DAAD9 transparent;
+}
+  
+.wrapper .navbar .right ul li.active .dropdown{
+    display: block;
+}
+
+.wrapper .navbar .left li a:hover{
+    color: #3a6d8d;
+}
+
+/* Bagian Kiri Deskripsi*/
+.upperjudul1{
+    font-weight: bold;
+    font-size: 24px;
+    color: #0175C2;
+}
+
+.deskripsi{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.card-image{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image > img {
+    width: 100%;
+    max-width: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1.5);
+    -moz-transform: translate(-50%, -50%) scale(1.5);
+    -o-transform: translate(-50%, -50%) scale(1.5);
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+
+.desk-info{
+    margin-top: 20px;
+}
+
+.card-body p{
+    text-align: justify;
+    font-size: 14px;
+}
+
+/* Bagian Kanan Deskripsi */
+.event-detail{
+    margin-top: 40px;
+    background-color: #E6F0F4;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.event-detail h6{
+    font-weight: normal;
+}
+
+.event-detail h4{
+    color: #1A84C8;
+}
+
+.body-detail .penyelenggara{
+    list-style: none;
+    text-decoration: none;
+    transition: .3s;
+    margin-top: 10px;
+}
+
+.penyelenggara h4{
+    font-size: 16px;
+    color: black;
+    padding-top: 10px;
+    margin-left: 10px;
+    font-weight: normal;
+    
+}
+
+.body-detail .penyelenggara img{
+    float: left;
+    margin: 0px;
+    justify-content: center;
+}
+
+.body-detail .penyelenggara{
+    display: inline-flex;
+}
+
+.body-detail h6{
+    margin-bottom: 0;
+    margin-top: 20px;
+    font-weight: bold;
+    align-items: baseline;
+}
+
+.btn1{
+    width: 190px;
+    height: 40px;
+    margin: 10px 0;
+    border: none;
+    background: #0175C2;
+    border-radius: 15px;
+    outline: none;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight:bold;
+    font-size: 18px;
+    cursor: pointer;
+    
+    /* align-items: center; */
+    text-align: center;
+    color: #FFFFFF;
+    /* background-size: 200%; */
+}
+.btn1:hover{
+    background: #1A84C8;
+    border: 2px solid #0175C2;;
+    color:#0175C2;
+}
+
+.center{
+    transform: translateX(25%);
+}
+

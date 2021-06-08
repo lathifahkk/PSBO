@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class TableEvent extends Migration
+class CreateEventsTables extends Migration
 {
     /**
      * Run the migrations.
@@ -27,7 +27,7 @@ class TableEvent extends Migration
             $table->unsignedBigInteger('id_org_ev');
             $table->foreign('id_org_ev')
                 ->references('id_org')
-                ->on('orgs');
+                ->on('organisasis');
 
             $table->unsignedBigInteger('id_admin_ev');
             $table->foreign('id_admin_ev')->references('id_admin')->on('admins');
