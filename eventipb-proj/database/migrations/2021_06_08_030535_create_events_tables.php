@@ -18,19 +18,18 @@ class CreateEventsTables extends Migration
            
             $table->string('nama_event');
             $table->date('tanggal_pelaksanaan');
-            $table->dateTimeTz('jam', $precision = 0);
-            $table->timestamp('waktu_pendaftaran', $precision = 0);
+            $table->time('waktu_pelaksanaan');
             $table->string('lokasi');
-            $table->multiLineString('deskripsi');
+            $table->string('deskripsi');
             $table->string('kategori');
             
-            $table->unsignedBigInteger('id_org_ev');
-            $table->foreign('id_org_ev')
-                ->references('id_org')
-                ->on('organisasis');
+            // $table->unsignedBigInteger('id_org_ev');
+            // $table->foreign('id_org_ev')
+            //     ->references('id_org')
+            //     ->on('organisasis');
 
-            $table->unsignedBigInteger('id_admin_ev');
-            $table->foreign('id_admin_ev')->references('id_admin')->on('admins');
+            // $table->unsignedBigInteger('id_admin_ev');
+            // $table->foreign('id_admin_ev')->references('id_admin')->on('admins');
             // $table->image('status');
 
             // $table->foreign('nama_user')->references('nama_user')->on('users');

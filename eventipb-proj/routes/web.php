@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+// use App\Http\Controllers\EventController;
 use Illuminate\Http\Request;
 use App\Http\Controllers;
 
@@ -33,6 +34,9 @@ Route::get('/login/logout', 'App\Http\Controllers\LoginController@logout')->name
 Route::get('/homeAdmin', function () {
     return view('homeAdmin');
 });
+
+Route::get('form', 'App\Http\Controllers\EventController@index')->name('form');
+Route::post('add','App\Http\Controllers\EventController@add')->name('add');
 
 // Route::get('/deskEvent', function () {
 //     return view('deskEvent');
