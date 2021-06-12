@@ -32,20 +32,16 @@
                 </div>
                 <div class="right">
                     <ul>
+                      <li><a href="#">Admin IPB</a></li>
+                      <li><button class="btn btn-outline-light" type="button" style="font-weight:bold">Keluar</button></li>
+                    </ul>
+                    <!-- <ul>
                       <li>
                       <a href="#">
-                        <p>Admin Ambisius<br> <span>IPB Univeristy</span></p><img src="{{url('/image/user.svg')}}" alt="Admin" width="40"><i class="fas fa-angle-down"></i>
-                        </a>
-                        <div class="dropdown">
-                            <ul>
-                              <li><a href="#"><i class="fas fa-user" style="margin-right: 10px;"></i> Profile</a></li>
-                              <li><a href="#"><i class="fas fa-sliders-h" style="margin-right: 10px;"></i> Settings</a></li>
-                              <li><a href="#"><i class="fas fa-sign-out-alt" style="margin-right: 10px;"></i> Signout</a></li>
-                          </ul>
-                        </div>
-                        
+                        <p>Admin Ambisius</p><img src="{{url('/image/user.svg')}}" alt="Admin" width="40">
+                        </a>                        
                       </li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </div>

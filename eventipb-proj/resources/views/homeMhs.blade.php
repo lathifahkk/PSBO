@@ -86,6 +86,8 @@
 
             
             <div class = "product-items">
+                       
+                @foreach($events as $event)
                 <!-- single product -->
                 <div class = "product">
                     <div class = "product-content">
@@ -96,166 +98,19 @@
 
                     <div class = "product-info">
                         <div class = "product-info-top">
-                            <h2 class = "sm-title">Rabu, 16 Agustus 2021</h2>
+                            <h2 class = "sm-title">{{$event['tanggal_pelaksanaan']}}</h2>
                         </div>
-                        <a href = "/deskEvent" class = "product-name">Webinar menjadi Tukul Arwana 1</a>
+                        <a href = "/deskEvent" class = "product-name">{{$event['nama_event']}}</a>
                         <p class = "product-price">Rp 1.000.000</p>
                     </div>
 
                     <div class = "off-info">
-                        <h2 class = "sm-title">Webinar</h2>
+                        <h2 class = "sm-title">{{$event['kategori']}}</h2>
                     </div>
                 </div>
                 <!-- end of single product -->
-                <!-- single product -->
-                <div class = "product">
-                    <div class = "product-content">
-                        <div class = "product-img">
-                            <img src = "{{url('/image/poster1.png')}}" alt = "product image">
-                        </div>
-                    </div>
+                @endforeach
 
-                    <div class = "product-info">
-                        <div class = "product-info-top">
-                            <h2 class = "sm-title">Rabu, 16 Agustus 2021</h2>
-                        </div>
-                        <a href = "#" class = "product-name">Webinar menjadi Tukul Arwana</a>
-                        <p class = "product-price">Rp 1.000.000</p>
-                    </div>
-                </div>
-                <!-- end of single product -->
-
-                <!-- single product -->
-                <div class = "product">
-                    <div class = "product-content">
-                        <div class = "product-img">
-                            <img src = "{{url('/image/poster1.png')}}" alt = "product image">
-                        </div>
-                    </div>
-
-                    <div class = "product-info">
-                        <div class = "product-info-top">
-                            <h2 class = "sm-title">Rabu, 16 Agustus 2021</h2>
-                        </div>
-                        <a href = "#" class = "product-name">Webinar menjadi Tukul Arwana</a>
-                        <p class = "product-price">Rp 1.000.000</p>
-                    </div>
-
-                    <div class = "off-info">
-                        <h2 class = "sm-title">Webinar</h2>
-                    </div>
-                </div>
-                <!-- end of single product -->
-
-                <!-- single product -->
-                <div class = "product">
-                    <div class = "product-content">
-                        <div class = "product-img">
-                            <img src = "{{url('/image/poster1.png')}}" alt = "product image">
-                        </div>
-                    </div>
-
-                    <div class = "product-info">
-                        <div class = "product-info-top">
-                            <h2 class = "sm-title">Rabu, 16 Agustus 2021</h2>
-                        </div>
-                        <a href = "#" class = "product-name">Webinar menjadi Tukul Arwana</a>
-                        <p class = "product-price">Rp 1.000.000</p>
-                    </div>
-
-                    <div class = "off-info">
-                        <h2 class = "sm-title">Webinar</h2>
-                    </div>
-                </div>
-                <!-- end of single product -->
-
-                <!-- single product -->
-                <div class = "product">
-                    <div class = "product-content">
-                        <div class = "product-img">
-                            <img src = "{{url('/image/poster1.png')}}" alt = "product image">
-                        </div>
-                    </div>
-
-                    <div class = "product-info">
-                        <div class = "product-info-top">
-                            <h2 class = "sm-title">Rabu, 16 Agustus 2021</h2>
-                        </div>
-                        <a href = "#" class = "product-name">Webinar menjadi Tukul Arwana</a>
-                        <p class = "product-price">Rp 1.000.000</p>
-                    </div>
-
-                    <div class = "off-info">
-                        <h2 class = "sm-title">Webinar</h2>
-                    </div>
-                </div>
-                <!-- end of single product -->
-
-                <!-- single product -->
-                <div class = "product">
-                    <div class = "product-content">
-                        <div class = "product-img">
-                            <img src = "{{url('/image/poster1.png')}}" alt = "product image">
-                        </div>
-                    </div>
-
-                    <div class = "product-info">
-                        <div class = "product-info-top">
-                            <h2 class = "sm-title">Rabu, 16 Agustus 2021</h2>
-                        </div>
-                        <a href = "#" class = "product-name">Webinar menjadi Tukul Arwana</a>
-                        <p class = "product-price">Rp 1.000.000</p>
-                    </div>
-
-                    <div class = "off-info">
-                        <h2 class = "sm-title">Webinar</h2>
-                    </div>
-                </div>
-                <!-- end of single product -->
-
-                <!-- single product -->
-                <div class = "product">
-                    <div class = "product-content">
-                        <div class = "product-img">
-                            <img src = "{{url('/image/poster1.png')}}" alt = "product image">
-                        </div>
-                    </div>
-
-                    <div class = "product-info">
-                        <div class = "product-info-top">
-                            <h2 class = "sm-title">Rabu, 16 Agustus 2021</h2>
-                        </div>
-                        <a href = "#" class = "product-name">Webinar menjadi Tukul Arwana</a>
-                        <p class = "product-price">Rp 1.000.000</p>
-                    </div>
-
-                    <div class = "off-info">
-                        <h2 class = "sm-title">Webinar</h2>
-                    </div>
-                </div>
-                <!-- end of single product -->
-
-                <!-- single product -->
-                <div class = "product">
-                    <div class = "product-content">
-                        <div class = "product-img">
-                            <img src = "{{url('/image/poster1.png')}}" alt = "product image">
-                        </div>
-                    </div>
-
-                    <div class = "product-info">
-                        <div class = "product-info-top">
-                            <h2 class = "sm-title">Rabu, 16 Agustus 2021</h2>
-                        </div>
-                        <a href = "#" class = "product-name">Webinar menjadi Tukul Arwana</a>
-                        <p class = "product-price">Rp 1.000.000</p>
-                    </div>
-
-                    <div class = "off-info">
-                        <h2 class = "sm-title">Webinar</h2>
-                    </div>
-                </div>
-                <!-- end of single product -->
             </div>
                              
         </div>

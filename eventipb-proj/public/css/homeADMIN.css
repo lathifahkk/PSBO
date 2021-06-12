@@ -39,16 +39,15 @@ body,html{
 }
 
 .wrapper .navbar .right ul li a{
-    display: flex;
-    height: 40px;
+    display: inline;
 }
 
-.wrapper .navbar .left ul li a{
+.wrapper .navbar .left ul li a, .wrapper .navbar .right ul li a{
     justify-content: left;
     padding: 10px 15px;
 }
 
-.wrapper .navbar .left ul li{
+.wrapper .navbar .left ul li, .wrapper .navbar .right ul li{
     align-items: center;
     display: inline;
     line-height: 50px;
@@ -73,31 +72,9 @@ body,html{
     position: relative;
     list-style: none;
 }
-  
-.wrapper .navbar .right ul li .dropdown{
-    position: absolute;
-    top: 65px;
-    left: 40px;
-    right: 0px;
-    background: #5DAAD9;
-    padding: 10px 0px;
-    border-radius: 5px;
-    display: none;
-}
 
 .wrapper .navbar .right .dropdown ul li a{
     align-items: center;
-}
-  
-.wrapper .navbar .right ul li .dropdown:before{
-    content: "";
-    align-items: left;
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 10px solid;
-    border-color: transparent transparent #5DAAD9 transparent;
 }
   
 .wrapper .navbar .right ul li.active .dropdown{

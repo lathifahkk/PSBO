@@ -5,6 +5,7 @@ use App\Http\Controllers\LoginController;
 // use App\Http\Controllers\EventController;
 use Illuminate\Http\Request;
 use App\Http\Controllers;
+use App\Http\Controllers\homeMhsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,6 +38,9 @@ Route::get('/homeAdmin', function () {
 
 Route::get('form', 'App\Http\Controllers\EventController@index')->name('form');
 Route::post('add','App\Http\Controllers\EventController@add')->name('add');
+
+Route::get('homeMhs', 'App\Http\Controllers\homeMhsController@index')->name('homeMhs');
+
 
 // Route::get('/deskEvent', function () {
 //     return view('deskEvent');
