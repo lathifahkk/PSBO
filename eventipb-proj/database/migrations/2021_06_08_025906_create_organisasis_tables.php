@@ -14,10 +14,11 @@ class CreateOrganisasisTables extends Migration
     public function up()
     {
         Schema::create('organisasis', function (Blueprint $table) {
-            $table->bigIncrements('id_org');
-            $table->string('tingkat');
-            
-            $table->foreignId('user_id')->constrained('users');
+            $table->bigIncrements('id');
+            $table->string('email')->unique();
+            $table->string('password');
+            $table->string('nama_organisasi');
+            $table->string('tingkat');        
         });
     }
 

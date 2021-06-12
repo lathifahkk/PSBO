@@ -22,15 +22,14 @@ class CreateEventsTables extends Migration
             $table->string('lokasi');
             $table->string('deskripsi');
             $table->string('kategori');
+            $table->integer('jumlah_tiket');
+            $table->mediumText('poster');
+            $table->string('nama_organisasi');
             
-            // $table->unsignedBigInteger('id_org_ev');
-            // $table->foreign('id_org_ev')
-            //     ->references('id_org')
+            // $table->unsignedBigInteger('id_org');
+            // $table->foreign('id_org')
+            //     ->references('id')
             //     ->on('organisasis');
-
-            // $table->unsignedBigInteger('id_admin_ev');
-            // $table->foreign('id_admin_ev')->references('id_admin')->on('admins');
-            // $table->image('status');
 
             // $table->foreign('nama_user')->references('nama_user')->on('users');
         });

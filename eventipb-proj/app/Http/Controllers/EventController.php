@@ -12,6 +12,10 @@ class EventController extends Controller
         return view('event');
     }
 
+    function open(){
+        return view('deskEvent');
+    }
+
     function add(Request $request)
     {
         // $request->validate([
@@ -25,14 +29,17 @@ class EventController extends Controller
         // ]);
 
         $query = DB::table('events')->insert([
+            'nama_organisasi'=> $request->input('nama_organisasi'),
             'nama_event'=> $request->input('nama_event'),
             'tanggal_pelaksanaan' => $request->input('tanggal_pelaksanaan'),
             'waktu_pelaksanaan'=> $request->input('waktu_pelaksanaan'),
             'lokasi'=> $request->input('lokasi'),
             'deskripsi'=> $request->input('deskripsi'),
+            'jumlah_tiket'=> $request->input('jumlah_tiket'),
             'kategori'=> $request->input('kategori'),
+            'poster'=> $request->input('poster'),
         ]);
-        
+
         if($query){
             return back()->with('success', 'Event berhasil di buat');
         }

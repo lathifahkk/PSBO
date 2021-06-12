@@ -6,6 +6,7 @@ use App\Http\Controllers\LoginController;
 use Illuminate\Http\Request;
 use App\Http\Controllers;
 use App\Http\Controllers\homeMhsController;
+use App\Http\Controllers\deskEventController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,29 +24,21 @@ Route::get('/', function () {
     return view('login');
 });
 
-// Route::resource('user', 'UserController');
-// Route::get('login',[LoginController::class, 'postlogin']);
+
 Route::get('/login', 'App\Http\Controllers\LoginController@index')->name('login');
 Route::post('/login/checklogin', 'App\Http\Controllers\LoginController@checklogin')->name('checklogin');
-Route::get('/login/homeAdmin', 'App\Http\Controllers\LoginController@successlogin')->name('successlogin');
+Route::get('/login/homeOrg', 'App\Http\Controllers\LoginController@successlogin')->name('successlogin');
 Route::get('/login/logout', 'App\Http\Controllers\LoginController@logout')->name('logout');
 
-// Route::post('/postlogin', 'LoginController@postLogin')->name('postLogin');
-
-Route::get('/homeAdmin', function () {
-    return view('homeAdmin');
-});
+//
 
 Route::get('form', 'App\Http\Controllers\EventController@index')->name('form');
 Route::post('add','App\Http\Controllers\EventController@add')->name('add');
 
 Route::get('homeMhs', 'App\Http\Controllers\homeMhsController@index')->name('homeMhs');
+Route::get('konfirmasievent', 'App\Http\Controllers\deskEventController@index_event')->name('konfirmasievent');
 
-
-// Route::get('/deskEvent', function () {
-//     return view('deskEvent');
-// });
-
-// Route::get('/pendaftaranMhs', function () {
-//     return view('pendaftaranMhs');
-// });
+//
+Route::get('/infoTiket', function () {
+    return view('infoTiket');
+});

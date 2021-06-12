@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ URL::asset('css/homeMHS.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/navbarMHS.css') }}">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;800&display=swap" rel="stylesheet">   
@@ -20,8 +21,9 @@
     </style>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="navbar">
+@csrf
+<div class="wrapper">
+        <nav class="navbar ">
             <img src="{{url('/image/IPBEvent.png')}}" alt="IPB EVENT">
             <div class="left">
                 <ul>
@@ -32,21 +34,14 @@
                 <ul>
                   <li>
                     <a href="#">
-                    <p>Mahasiswa Ambisius<br> <span>G61110067</span></p><img src="{{url('/image/user.svg')}}" alt="Admin" width="40"><i class="fas fa-angle-down"></i>
+                      <p>Mahasiswa Ambisius<br> 
+                        <span>G61110067</span></p>
                     </a>
-                     
-                    <div class="dropdown">
-                        <ul>
-                          <li><a href="#"><i class="fas fa-user" style="margin-right: 10px;"></i> Profile</a></li>
-                          <li><a href="#"><i class="fas fa-sliders-h" style="margin-right: 10px;"></i> Settings</a></li>
-                          <li><a href="#"><i class="fas fa-sign-out-alt" style="margin-right: 10px;"></i> Signout</a></li>
-                      </ul>
-                    </div>
-                    
                   </li>
-                </ul>
+                  <li><a href="#"><button class="btnlogout">Keluar <i class="fas fa-sign-out-alt"></i></button> </a></li>
+                </ul>               
             </div>
-        </div>
+        </nav>
     </div>
     <div class="row">
         <div class="col-sm-9">
@@ -101,7 +96,7 @@
                             <h2 class = "sm-title">{{$event['tanggal_pelaksanaan']}}</h2>
                         </div>
                         <a href = "/deskEvent" class = "product-name">{{$event['nama_event']}}</a>
-                        <p class = "product-price">Rp 1.000.000</p>
+                        <p class = "lokasi">{{$event['lokasi']}}</p>
                     </div>
 
                     <div class = "off-info">

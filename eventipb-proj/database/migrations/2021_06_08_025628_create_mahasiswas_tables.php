@@ -14,10 +14,14 @@ class CreateMahasiswasTables extends Migration
     public function up()
     {
         Schema::create('mahasiswas', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('email')->unique();
+            $table->string('password');
+            $table->string('nama_mahasiswa');
             $table->string('nim')->unique();
             $table->string('departemen');
+
             
-            $table->foreignId('user_id')->constrained('users');
         });
     }
 

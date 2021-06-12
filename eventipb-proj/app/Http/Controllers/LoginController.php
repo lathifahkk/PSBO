@@ -28,7 +28,7 @@ class LoginController extends Controller
 
         if(Auth::attempt($user_data))
         {
-            return redirect('/homeAdmin');
+            return redirect('/homeOrg');
         }
         else
         {
@@ -37,7 +37,7 @@ class LoginController extends Controller
     }
     function successlogin()
     {
-        return view('homeAdmin');
+        return view('homeOrg');
     }
 
     function logout()

@@ -1,3 +1,10 @@
+<?php
+use Illuminate\Support\Facades\DB;
+$data = DB::table('events')->get();
+$latest = DB::table('events')->latest('id_event')->first();
+
+
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -34,9 +41,8 @@
                 <ul>
                   <li>
                     <a href="#">
-                    <p>Mahasiswa Ambisius<br> 
-                        <span>G61110067</span>
-                    </p>
+                      <p>Mahasiswa Ambisius<br> 
+                        <span>G61110067</span></p>
                     </a>
                   </li>
                   <li><a href="#"><button class="btnlogout">Keluar <i class="fas fa-sign-out-alt"></i></button> </a></li>
@@ -52,12 +58,13 @@
                         <div class="deskripsi">
                             <div class="card" style="width:600px;"> <!-- bisa ditambah (border: none;) buat ilangin bordernya*/-->
                                 <img class="card-img-top" src="{{url('/image/poster2.png')}}" alt="Card image" style="width:100%">
-                                @foreach($events as $event)
-                                <div class="card-body">
-                                    <h4 class="upperjudul1">Deskripsi Event</h4>
-                                    <p class="card-text">{{$event['deskripsi']}}</p>
-                                </div>
-                                @endforeach
+                                
+
+                                    <div class="card-body">
+                                        <h4 class="upperjudul1">Deskripsi Event</h4>
+                                        <p class="card-text">{{$latest->deskripsi}}</p>
+                                    </div>
+                                    
                             </div>
                         </div>
                     </div>
@@ -65,10 +72,10 @@
                     <div class="col-md-5">
                         <div class="event-detail">
                             <div class="detail-content">
-                            @foreach($events as $event)
+                           
                                 <div class="top-detail">
-                                    <h6>{{$event['kategori']}}</h6>
-                                    <h4>{{$event['nama_event']}}</h4>
+                                    <h6>{{$latest->kategori}}</h6>
+                                    <h4>{{$latest->nama_event}}</h4>
                                 </div>
                                 <div class="body-detail">
                                     <h6>Diselenggarakan oleh</h6>
@@ -78,8 +85,8 @@
 
                                     <h6>Tanggal & Waktu</h6>
                                     <div class="date">
-                                        <a><i class="fa fa-calendar" aria-hidden="true" style="margin-right: 10px;"></i>{{$event['tanggal_pelaksanaan']}}</a> <br>
-                                        <a><i class="fa fa-clock" aria-hidden="true" style="margin-right: 10px;"></i>{{$event['waktu_pelaksanaan']}}</a>                                        
+                                        <a><i class="fa fa-calendar" aria-hidden="true" style="margin-right: 10px;"></i>{{$latest->tanggal_pelaksanaan}}</a> <br>
+                                        <a><i class="fa fa-clock" aria-hidden="true" style="margin-right: 10px;"></i>{{$latest->waktu_pelaksanaan}}</a>                                        
                                     </div>
 
                                     <!-- <h6>Harga tiket</h6>
@@ -89,16 +96,21 @@
 
                                     <h6>Lokasi</h6>
                                     <div class="loc">
-                                        <a><i class="fas fa-map-marker-alt" aria-hidden="true" style="margin-right: 10px;"></i>{{$event['lokasi']}}</a>                                 
+                                        <a><i class="fas fa-map-marker-alt" aria-hidden="true" style="margin-right: 10px;"></i>{{$latest->lokasi}}</a>                                 
                                     </div>
-                                    <div class="daftar">
+                                    <!-- <div class="daftar">
                                         <div class="center">
                                             <button type="button" class="btn1" name="hapus"> Hapus</button>
-                                            <button type="button" class="btn2" name="sunting">Sunting</button>    
+                                            <button type="button" class="btn1" name="sunting">Sunting</button>    
                                         </div>
+                                    </div> -->
+                                    <div class="daftar">
+                                        <button type="button" class="btn1" id="btn-remove">Hapus</button>
+                                        <button type="button" class="btn1" id="btn-edit">Sunting</button>
+                                      
                                     </div>
                                 </div>
-                            @endforeach
+                           
                             </div>
                         </div>           
                     </div>   
