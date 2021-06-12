@@ -45,9 +45,23 @@ body{
     justify-content: center;
 }
 
+.wrapper .navbar .right ul{
+    height: 40px;
+    text-decoration: none;
+    list-style: none;
+    justify-content: center;
+    display: flex;
+}
+
+.wrapper .navbar .right{
+    margin-left: auto;
+    display: flex;
+}
+
 .wrapper .navbar .right ul li a{
     display: flex;
     height: 40px;
+
 }
 
 .wrapper .navbar .left ul li a{
@@ -143,4 +157,13 @@ body{
     background: #4e6370;
     border: 1px solid #757575;;
     color:#f5f5f5;
+}
+
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
