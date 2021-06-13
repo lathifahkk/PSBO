@@ -1,4 +1,4 @@
-# PSBO
+# Laporan Tugas Akhir PSBO
 <p align="center">
   <img height="100" src="https://user-images.githubusercontent.com/60083962/121816763-a1239300-cca7-11eb-8c87-b74b56b4de1f.png">
 </p>
