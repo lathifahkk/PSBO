@@ -1,5 +1,5 @@
 # PSBO
-
+![Group 61 (1)](https://user-images.githubusercontent.com/60083962/121816693-44c07380-cca7-11eb-9d75-07c85689a4cb.png)
 
 ## Deskripsi singkat aplikasi
   Untuk mengatasi permasalahan yang ditemukan, kami sebagai pengembang mencoba membangun aplikasi dengan nama IPB’s Event pada platform berbasis website. Aplikasi IPB’s Event memungkinkan untuk menampilkan semua kegiatan yang diselenggarakan oleh internal IPB University baik yang diselenggarakan oleh mahasiswa maupun pihak kampus IPB University seperti lomba, webinar, seminar, dan sebagainya. Mahasiswa dapat melihat kegiatan yang akan diselenggarakan berdasarkan waktu pelaksanaanya pada kalender. Mahasiswa juga dapat mendaftarkan diri langsung di aplikasi tersebut sebagai peserta. Selain itu, mahasiswa juga bisa mendaftarkan  kegiatan yang akan diselenggarakannya sebagai panitia pelaksana kegiatan agar kegiatannya dapat terlihat pada aplikasi. Aplikasi IPB’s Event  juga mendukung adanya informasi kegiatan yang pendaftarannya dibuka pada hari itu dan jadwal mahasiswa tersebut pada hari itu. Dimungkinkan untuk membangun sistem reminder kegiatan untuk membantu mengingatkan mahasiswa tentang kegiatannya.
