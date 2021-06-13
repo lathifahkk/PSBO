@@ -1,5 +1,4 @@
 # PSBO
-![Group 61](https://user-images.githubusercontent.com/60083962/121816589-afbd7a80-cca6-11eb-996c-6d5f3b22ff43.png)
 
 
 ## Deskripsi singkat aplikasi
