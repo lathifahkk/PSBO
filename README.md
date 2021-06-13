@@ -1,4 +1,7 @@
 # PSBO
+<p align="center">
+  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
+</p>
 ![Group 61 (3)](https://user-images.githubusercontent.com/60083962/121816763-a1239300-cca7-11eb-8c87-b74b56b4de1f.png)
 
 ## Deskripsi singkat aplikasi
