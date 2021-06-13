@@ -3,7 +3,7 @@
   <img height="100" src="https://user-images.githubusercontent.com/60083962/121816763-a1239300-cca7-11eb-8c87-b74b56b4de1f.png">
 </p>
 
-[Deskripsi Aplikasi](#Deskripsi-singkat-aplikasi) | [User Analysis](#User-analysis) | [Dampak](#Dampak) | [Spesifikasi](#Spesifikasi-teknis-lingkungan-pengembangan) | [Diagram](#Use-case-diagram,-activity-diagram,-class-diagram,-ERD) | [Fitur umum](#Fitur-umum) | [OOP](#Konsep-OOP-yang-digunakan) | [Desain Pengembangan](#Tipe-desain-pengembangan-yang-digunakan-(pattern/anti-pattern)) | [Developer](#Developer-beserta-job-desc) | [Referensi](#Referensi)
+[Deskripsi Aplikasi](#Deskripsi-singkat-aplikasi) | [User Analysis](#User-analysis-(analisis-user,-user-story)) | [Dampak](#Dampak) | [Spesifikasi](#Spesifikasi-teknis-lingkungan-pengembangan) | [Diagram](#Use-case-diagram,-activity-diagram,-class-diagram,-ERD) | [Fitur umum](#Fitur-umum) | [OOP](#Konsep-OOP-yang-digunakan) | [Desain Pengembangan](#Tipe-desain-pengembangan-yang-digunakan-(pattern/anti-pattern)) | [Developer](#Developer-beserta-job-desc) | [Referensi](#Referensi)
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
 
 ## Deskripsi singkat aplikasi
