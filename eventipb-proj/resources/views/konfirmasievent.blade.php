@@ -1,8 +1,10 @@
 <?php
 use Illuminate\Support\Facades\DB;
 $data = DB::table('events')->get();
-$latest = DB::table('events')->latest('id_event')->first();
-
+// $dataid = DB::table('events')->get('id');
+$latest = DB::table('events')->latest('id')->first();
+$org = DB::table('organisasis')->get();
+$dataid = DB::table('events')->get('id');
 
 ?>
 <!doctype html>
@@ -41,8 +43,10 @@ $latest = DB::table('events')->latest('id_event')->first();
                 <ul>
                   <li>
                     <a href="#">
-                      <p>Mahasiswa Ambisius<br> 
-                        <span>G61110067</span></p>
+                    <!-- @foreach($org as $org)
+                      <p>{{$org->nama_organisasi}}<br> 
+                        <span></span></p>
+                    @endforeach -->
                     </a>
                   </li>
                   <li><a href="#"><button class="btnlogout">Keluar <i class="fas fa-sign-out-alt"></i></button> </a></li>
@@ -105,9 +109,10 @@ $latest = DB::table('events')->latest('id_event')->first();
                                         </div>
                                     </div> -->
                                     <div class="daftar">
-                                        <button type="button" class="btn1" id="btn-remove">Hapus</button>
-                                        <button type="button" class="btn1" id="btn-edit">Sunting</button>
-                                      
+                                    <a href="editevent/{{$latest->id}}">
+                                        <button  class="btn1">Sunting</button>
+                                    </a>
+                                    <button type="button" class="btn1" id="btn-remove">Hapus</button>                                     
                                     </div>
                                 </div>
                            

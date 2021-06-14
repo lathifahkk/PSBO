@@ -17,11 +17,20 @@ class OrganisasisSeeder extends Seeder
     public function run()
     {
         //
-        DB::table('organisasis')->insert([
+        DB::table('organisasis')->insert(
+        [
             'email'             =>  'bemfasilkom@gmail.com',
             'password'          =>  Hash::make('fasilkom'),
             'nama_organisasi'   =>  'BEM Fasilkom IPB',
             'tingkat'           =>  'Fakultas',
-        ]);
+        ],
+        [
+            'email'             =>  'bemilkom@gmail.com',
+            'password'          =>  Hash::make('ilkom'),
+            'nama_organisasi'   =>  'BEM Ilkom IPB',
+            'tingkat'           =>  'Fakultas',
+        ]
+    
+        );
     }
 }
