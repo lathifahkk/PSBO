@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Route;
 // use App\Http\Controllers\deskEventController;
 use App\Http\Controllers\User\UserController;
 use App\Http\Controllers\Org\OrgController;
+use App\Http\Controllers\EventController;
 
 
 /*
@@ -52,10 +53,12 @@ Route::prefix('user')->name('user.')->group(function(){
     });
 
     Route::middleware(['auth:web', 'PreventBackHistory'])->group(function(){
-          Route::view('/home','dashboard.user.home')->name('home');
-          Route::post('/logout',[UserController::class,'logout'])->name('logout');
-          Route::get('/add-new',[UserController::class,'add'])->name('add');
+        Route::view('/home','dashboard.user.home')->name('home');
+        Route::post('/logout',[UserController::class,'logout'])->name('logout');
+        Route::get('/add-new',[UserController::class,'add'])->name('add');
     });
+
+    Route::post('/home',[EventController::class,'show'] );
 });
 
 Route::prefix('org')->name('org.')->group(function(){
@@ -76,3 +79,4 @@ Route::prefix('org')->name('org.')->group(function(){
 
     });
 });
+

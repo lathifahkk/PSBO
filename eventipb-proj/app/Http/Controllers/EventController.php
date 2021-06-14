@@ -9,14 +9,40 @@ use App\Models\Event;
 
 class EventController extends Controller
 {
-    //
-    function index(){
-        return view('event');
-    }
+    // public function show(){
+    //     $user = Event::all();
+    //     return redirect()->route('user.home', ['events'=>$data]);
+    // }
+    // function show(){
+    //     return view('dashboard.user.home');
+    // }
 
-    function index_konf(){
-        return view('konfirmasievent');
-    }
+    // public function addData($data)
+    // {
+    //     $data=[
+    //         'nama_organisasi'=> $request->input('nama_organisasi'),
+    //             'nama_event'=> $request->input('nama_event'),
+    //             'tanggal_pelaksanaan' => $request->input('tanggal_pelaksanaan'),
+    //             'waktu_pelaksanaan'=> $request->input('waktu_pelaksanaan'),
+    //             'lokasi'=> $request->input('lokasi'),
+    //             'deskripsi'=> $request->input('deskripsi'),
+    //             'jumlah_tiket'=> $request->input('jumlah_tiket'),
+    //             'kategori'=> $request->input('kategori'),
+    //             'poster'=> $request->input('poster'),
+    //     ];
+    
+    //     $this->Event->addData($data);
+    //     return redirect()->route('dashboard.user.home')->with('pesan', 'Data berhasil ditambah');
+        
+    // }
+ 
+    // function index(){
+    //     return view('event');
+    // }
+
+    // function index_konf(){
+    //     return view('konfirmasievent');
+    // }
 
     function add(Request $request)
     {
@@ -43,11 +69,11 @@ class EventController extends Controller
             
     }
 
-    public function edit($id)
-    {
+    // public function edit($id)
+    // {
      
-        return view('editevent');
-         
-    }
+    //     return view('editevent');
+  
+    // }
 
 }

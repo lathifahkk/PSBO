@@ -4,12 +4,17 @@ namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Event;
 
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
+    function show(){
+        return view('home');
+    }
+
     function create(Request $request){
         //Validate Inputs
         $request->validate([
@@ -43,7 +48,8 @@ class UserController extends Controller
 
         $creds = $request->only('email','password');
         if( Auth::guard('web')->attempt($creds) ){
-            return redirect()->route('user.home');
+            $data = Event::all();
+            return redirect()->route('user.home', ['events'=>$data]);
         }else{
             return redirect()->route('user.login')->with('fail','Ada kesalahan pada email atau password nya. Coba lagi yuk!');
         }

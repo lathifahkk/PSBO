@@ -53,7 +53,7 @@
             <div class="form">
                 <div class="row">
                     @if(Session::get('success'))
-                        <script>window.location="/konfirmasievent";</script>
+                        <script>window.location="/org/home";</script>
                         <div class="alert alert-success">
                         {{ Session::get('success')}}
                     </div>   
