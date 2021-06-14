@@ -27,16 +27,15 @@
             <img src="{{url('/image/IPBEvent.png')}}" alt="IPB EVENT">
             <div class="left">
                 <ul>
-                  <li><a href="#">Beranda</a></li>
-                  <li><a href="#">Buat Event</a></li>
+                  <li><a href="{{ route('org.home')}}">Beranda</a></li>
+                  <li><a href="{{ route('org.eventcreate')}}">Buat Event</a></li>
               </ul>
             </div>
             <div class="right">
                 <ul>
                   <li>
                     <a href="#">
-                      <p name='nama_organisasi'>BEM<br> 
-                        <span></span></p>
+                    <p>Organisasi Mahasiswa<br><span>IPB University</span></p>
                     </a>
                   </li>
                   <li><a href="#"><button class="btnlogout">Keluar <i class="fas fa-sign-out-alt"></i></button> </a></li>

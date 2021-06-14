@@ -9,6 +9,11 @@ body,html{
     font-family: 'Nunito Sans', sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
+
 .wrapper{
     overflow: hidden;
     top: 0;
@@ -266,6 +271,10 @@ body,html{
     margin-left: 30px;
 }
 
+.col-sm-9{
+    margin-bottom: 80px;
+}
+
 .product{
     margin: 1rem;
     position: relative;
@@ -276,6 +285,7 @@ body,html{
     padding: 3rem 0.5rem 2rem 0.5rem;
     cursor: pointer;
     border-radius: 15px 15px 0px 0px ;
+    height: 230px;
 }
 
 .product-img{
@@ -286,6 +296,10 @@ body,html{
     margin: 0 auto;
     border-radius: 50%;
     transition: background 0.5s ease;
+}
+
+.product-info{
+    height: 140px;
 }
 
 .product-btns{

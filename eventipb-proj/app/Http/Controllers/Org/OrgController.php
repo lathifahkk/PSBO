@@ -45,8 +45,9 @@ class OrgController extends Controller
 
         $creds = $request->only('email','password');
 
-        if( Auth::guard('org')->attempt($creds) ){
-            return redirect()->route('org.home');
+        if( Auth::guard('web')->attempt($creds) ){
+            $data = Event::all();
+            return redirect()->route('org.home', ['events'=>$data]);
         }else{
             return redirect()->route('org.login')->with('fail','Ada kesalahan pada email atau password nya. Coba lagi yuk!');
         }

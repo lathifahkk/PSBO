@@ -1,3 +1,9 @@
+<?php
+use Illuminate\Support\Facades\DB;
+$data = DB::table('events')->get();
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -34,8 +40,7 @@
             <ul>
                   <li>
                     <a href="#">
-                      <p>Mahasiswa Ambisius<br> 
-                        <span>G61110067</span></p>
+                      <p>Organisasi Mahasiswa<br><span>IPB University</span></p>
                     </a>
                   </li>
                   <li>
@@ -47,9 +52,30 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-9">
+        <div class="col">
             <p class="upperjudul">Kegiatan Saya</p>
             <div class = "product-items">
+                <!-- single product -->
+                <div class = "product">
+                    <div class = "product-content">
+                        <div class = "product-img">
+                            <img src = "{{url('/image/poster1.png')}}"  alt = "product image">
+                        </div>
+                    </div>
+
+                    <div class = "product-info">
+                        <div class = "product-info-top">
+                            <h2 class = "sm-title">Rabu, 16 Agustus 2021</h2>
+                        </div>
+                        <a href = "#" class = "product-name">Webinar menjadi Tukul Arwana</a>
+                        <p class = "product-price">Rp 1.000.000</p>
+                    </div>
+
+                    <div class = "off-info">
+                        <h2 class = "sm-title">Webinar</h2>
+                    </div>
+                </div>
+                <!-- end of single product -->
                 <!-- single product -->
                 <div class = "product">
                     <div class = "product-content">
@@ -161,23 +187,6 @@
                 <!-- end of single product -->
             </div>
                              
-        </div>
-        <div class="col-sm-3" >
-            <div class="luaranjadwal">
-                <div class="jadwalsaya">
-                    <center>
-                        <p>Jadwal saya</p>
-                    </center>
-                    <div class="events">
-                        <div class="event">
-                            <h6 class = "tglevent">Rabu, 16 Agustus 2021</h6>
-                            <a href = "#" class = "namaevent">How to train your dragon?</a>
-                        </div>    
-                    </div>
-    
-                </div>
-            </div>
-            
         </div>
       </div>
     <script type="text/javascript" src="login page main.js"></script>

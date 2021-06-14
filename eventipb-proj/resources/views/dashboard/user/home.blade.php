@@ -33,7 +33,7 @@ $data = DB::table('events')->get();
                 <img src="{{url('/image/IPBEvent.png')}}" alt="IPB EVENT">
                 <div class="left">
                     <ul>
-                    <li><a href="#">Beranda</a></li>
+                    <li><a href="{{ route('user.home')}}">Beranda</a></li>
                 </ul>
                 </div>
                 <div class="right">
@@ -103,7 +103,7 @@ $data = DB::table('events')->get();
                             <div class = "product-info-top">
                                 <h2 class = "sm-title">{{$event->tanggal_pelaksanaan}}</h2>
                             </div>
-                            <a href = "/deskEvent" class = "product-name">{{$event->nama_event}}</a>
+                            <a href="detail/{{ $event->id_event }}" class = "product-name">{{$event->nama_event}}</a>
                             <p class = "lokasi">{{$event->lokasi}}</p>
                         </div>
 

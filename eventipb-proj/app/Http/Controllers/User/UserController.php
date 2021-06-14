@@ -59,4 +59,8 @@ class UserController extends Controller
         Auth::guard('web')->logout();
         return redirect('/');
     }
+
+    function detail($id_event){
+        
+    }
 }

@@ -43,6 +43,8 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/user/detail/{$id_event}', [UserController::class,'detail'])->name('detail');
+
 Route::prefix('user')->name('user.')->group(function(){
   
     Route::middleware(['guest:web', 'PreventBackHistory'])->group(function(){
@@ -58,7 +60,9 @@ Route::prefix('user')->name('user.')->group(function(){
         Route::get('/add-new',[UserController::class,'add'])->name('add');
     });
 
-    Route::post('/home',[EventController::class,'show'] );
+    Route::get('/detail/{$id_event}', [UserController::class,'detail'])->name('detail');
+
+    // Route::post('/home',[EventController::class,'show'] );
 });
 
 Route::prefix('org')->name('org.')->group(function(){
@@ -74,7 +78,7 @@ Route::prefix('org')->name('org.')->group(function(){
          Route::view('/home','dashboard.org.home')->name('home');
          Route::post('logout',[OrgController::class,'logout'])->name('logout');
          Route::view('/eventcreate','dashboard.org.eventcreate')->name('eventcreate');
-         Route::get('form', 'App\Http\Controllers\EventController@index')->name('form');
+        //  Route::get('form', 'App\Http\Controllers\EventController@index')->name('form');
          Route::post('add','App\Http\Controllers\EventController@add')->name('add');
 
     });
