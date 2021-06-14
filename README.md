@@ -9,7 +9,7 @@
 ## Deskripsi singkat aplikasi
   Untuk mengatasi permasalahan yang ditemukan, kami sebagai pengembang mencoba membangun aplikasi dengan nama IPB’s Event pada platform berbasis website. Aplikasi IPB’s Event memungkinkan untuk menampilkan semua kegiatan yang diselenggarakan oleh internal IPB University baik yang diselenggarakan oleh mahasiswa maupun pihak kampus IPB University seperti lomba, webinar, seminar, dan sebagainya. Mahasiswa dapat melihat kegiatan yang akan diselenggarakan berdasarkan waktu pelaksanaanya pada kalender. Mahasiswa juga dapat mendaftarkan diri langsung di aplikasi tersebut sebagai peserta. Selain itu, mahasiswa juga bisa mendaftarkan  kegiatan yang akan diselenggarakannya sebagai panitia pelaksana kegiatan agar kegiatannya dapat terlihat pada aplikasi. Aplikasi IPB’s Event  juga mendukung adanya informasi kegiatan yang pendaftarannya dibuka pada hari itu dan jadwal mahasiswa tersebut pada hari itu. Dimungkinkan untuk membangun sistem reminder kegiatan untuk membantu mengingatkan mahasiswa tentang kegiatannya.
 
-## User analysis (analisis user, user story)
+## User analysis 
 ### Mahasiswa
 Sebagai seorang mahasiswa IPB, saya ingin mengetahui dan mendapatkan informasi lengkap terkait event  internal di IPB yang dapat saya ikuti. Supaya saya tidak ketinggalan informasi mengenai pelaksanaan  event tersebut  dan dapat mendaftar sebagai peserta  event.
 ### Panitia Event
@@ -18,10 +18,38 @@ Sebagai panitia dari suatu  event, saya ingin  event yang kami selenggarakan dap
 
 ## Dampak
 Dengan adanya aplikasi ini, informasi kegiatan dapat dikemas dan tersampaikan dengan baik sesuai dengan target sasarannya. Mahasiswa dapat memperoleh informasi kegiatan berdasarkan waktu pelaksanaan dan kategori yang diinginkan. Dengan adanya informasi kegiatan yang pendaftarannya dibuka pada hari itu mengurangi kemungkinan mahasiswa melewatkan kegiatan tersebut, hal ini menghasilkan dampak baik bagi pelaksana dan mahasiswa itu sendiri. Selain itu adanya fitur jadwal saya membantu mahasiswa agar tidak melewatkan kegiatan tersebut. Hal ini dinilai dapat mengurangi kemungkinan tidak terpenuhinya target peserta kegiatan berdasarkan ketersampaian informasi.
+
 ## Spesifikasi teknis lingkungan pengembangan
-## Use case diagram, activity diagram, class diagram, ERD
-## Fitur umum
+### Sofware
+### Hardware
+### Tech Stack
+
 ## Konsep OOP yang digunakan
+
 ## Tipe desain pengembangan yang digunakan (pattern/anti pattern)
-## Developer beserta job desc
+
+## Hasil dan Pembahasan
+### Use case diagram 
+### Activity diagram
+### Class diagram
+### ERD
+### Arsiektur Sistem
+### Fungsi utama yang di kembangkan
+### Fungsi CRUD
+
+## Hasil Implementasi
+### Screenshot sistem
+### Link Aplikasi (Jika sudah di deploy)
+
+## Saran untuk pengembangan selanjutnya
+
+## Developer dan jobdeks
+ Nama |NIM | Jobdesk |
+ :---:|:---:| :---:|
+Lathifah Kurnia K | G64180023 | |
+Tia Isnawati Noor| G64180034 | |
+Ulfainil Aisyah |  G64180045 | 
+Hana Salsabila |  G64180051 | |
+
+
 ## Referensi
