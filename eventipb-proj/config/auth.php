@@ -17,6 +17,10 @@ return [
         'guard' => 'web',
         'passwords' => 'users',
     ],
+    'org'=>[
+        'driver'=>'eloquent',
+        'model'=>App\Models\Org::class,
+     ],
 
     /*
     |--------------------------------------------------------------------------
@@ -46,6 +50,10 @@ return [
             'provider' => 'users',
             'hash' => false,
         ],
+        'org'=>[
+            'driver'=>'session',
+            'provider'=>'orgs',
+         ],
     ],
 
     /*
@@ -75,6 +83,11 @@ return [
         //     'driver' => 'database',
         //     'table' => 'users',
         // ],
+
+        'orgs'=>[
+            'driver'=>'eloquent',
+            'model'=>App\Models\Org::class,
+         ],
     ],
 
     /*
@@ -99,6 +112,10 @@ return [
             'expire' => 60,
             'throttle' => 60,
         ],
+        'orgs'=>[
+            'driver'=>'eloquent',
+            'model'=>App\Models\Org::class,
+        ]
     ],
 
     /*

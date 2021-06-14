@@ -29,7 +29,7 @@
             </div>
             <div class="right">
                 <ul>
-                    <li><a href="{{ route('user.register') }}"><button class="btn btn-outline-light" type="button" style="font-weight:bold">Register</button></li></a>
+                    <li><a href="{{ route('org.register')}}"><button class="btn btn-outline-light" type="button" style="font-weight:bold">Register</button></li></a>
                 </ul>
             </div>
     </div>
@@ -44,13 +44,14 @@
                         <img src="{{url('/image/pana.png')}}" class="img" alt="">
                     </div>
                     <div class="col-lg-7">
-                        <form action="{{ route('user.check') }}" method="post" autocomplete="off">
-                        @if (Session::get('fail'))
-                        <div class="alert alert-danger">
-                            {{ Session::get('fail') }}
-                        </div>
-                        @endif
+                        <form action="{{ route('org.check') }}" method="post">
+                            @if (Session::get('fail'))
+                            <div class="alert alert-danger">
+                                {{ Session::get('fail') }}
+                            </div>
+                            @endif
                             @csrf
+
                             <div class="form-row">
                                 <h2>IPB University's Event</h2>
                                 <h3>LOGIN</h3>
@@ -62,8 +63,8 @@
                                     </div>
                                     <div>
                                         <h5>Email</h5>
-                                        <input class="input" type="text" name="email" value="{{ old('email') }}">
-                                        <span class="text-danger">@error('email'){{ $message }}@enderror</span>
+                                        <input class="input" type="email" name="email" value="{{ old('email') }}">
+                                        <span class="text-danger">@error('email') {{ $message }} @enderror</span>
                                     </div>
                                 </div>
                                 <div class="input-div two">
@@ -72,12 +73,13 @@
                                     </div>
                                     <div>
                                         <h5>Kata Sandi</h5>
-                                        <input class=" input" type="password" name="password"  value="{{ old('password') }}">
-                                        <span class="text-danger">@error('password'){{ $message }}@enderror</span>
+                                        <input class=" input" type="password" name="password" value="{{ old('password') }}">
+                                        <span class="text-danger">@error('password') {{ $message }} @enderror</span>
                                     </div>
                                 </div>
-                            </div>    
-                            <button type="submit" class="btn1">Masuk</button>
+                            </div>
+                           
+                            <button type="submit" class="btn1" name="login" value="Login">Masuk</button>
                         </form>
                     </div>
                 </div>

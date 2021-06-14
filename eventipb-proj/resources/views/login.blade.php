@@ -18,11 +18,23 @@
         background:url('/image/bg.png') no-repeat;
         background-size: cover;
         padding-bottom: 500px;
-        padding-top: 130px;
 }
     </style>
 </head>
 <body>
+    <div class="wrapper">
+        <div class="navbar">
+        <img src="{{url('/image/IPBEvent.png')}}" alt="IPB EVENT">
+            <div class="left">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="{{route('regist')}}"><button class="btn btn-outline-light" type="button" style="font-weight:bold">Register</button></li></a>
+                </ul>
+            </div>
+    </div>
+
+    <div class="container1">
     <section class="Form">
         <div class="container">
             <div class="row no-gutters">
@@ -96,7 +108,8 @@
             </div>
         </div> 
     </section>
-    
+    </div>
+        
     <script>
         const inputs = document.querySelectorAll(".input");
 
