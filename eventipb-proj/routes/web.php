@@ -35,10 +35,21 @@ Route::get('/login/logout', 'App\Http\Controllers\LoginController@logout')->name
 Route::get('form', 'App\Http\Controllers\EventController@index')->name('form');
 Route::post('add','App\Http\Controllers\EventController@add')->name('add');
 
+Route::get('editevent/{id}','App\Http\Controllers\EventController@edit')->name('editevent');
+Route::post('update','App\Http\Controllers\EventController@update')->name('update');
+
 Route::get('homeMhs', 'App\Http\Controllers\homeMhsController@index')->name('homeMhs');
-Route::get('konfirmasievent', 'App\Http\Controllers\deskEventController@index_event')->name('konfirmasievent');
+Route::get('konfirmasievent', 'App\Http\Controllers\EventController@index_konf')->name('konfirmasievent');
 
 //
-Route::get('/infoTiket', function () {
-    return view('infoTiket');
+// Route::get('/infoTiket', function () {
+//     return view('infoTiket');
+// });
+
+// Route::get('/editevent', function () {
+//     return view('editevent');
+// });
+
+Route::get('/pendaftaranMhs', function () {
+    return view('pendaftaranMhs');
 });

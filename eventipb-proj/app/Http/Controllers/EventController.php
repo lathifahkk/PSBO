@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+// use App\Http\Controllers;
+use App\Models\Event;
 // namespace App\Http\Controllers;
 
 class EventController extends Controller
@@ -12,21 +14,13 @@ class EventController extends Controller
         return view('event');
     }
 
-    function open(){
-        return view('deskEvent');
+    function index_konf(){
+        return view('konfirmasievent');
     }
 
     function add(Request $request)
     {
-        // $request->validate([
-        //     'nama_event'=> required,
-        //     'tanggal_pelaksanaan' => required,
-        //     'jam' => required,
-        //     'waktu_event'=> required,
-        //     'lokasi'=> required,
-        //     'deskripsi'=> required,
-        //     'kategori'=> required,
-        // ]);
+
 
         $query = DB::table('events')->insert([
             'nama_organisasi'=> $request->input('nama_organisasi'),
@@ -47,18 +41,13 @@ class EventController extends Controller
             return back()->with('fail', 'terdapat kesalahan');
         }
             
-       
-        // print_r($req->input());
-        // $event = new ipbevent;
-        // $event->nama_event= $request->nama_event;
-        // $event->tanggal_pelaksanaan = $request->tanggal_pelaksanaan;
-        // $event->jam= $request->jam;
-        // $event->waktu_event= $request->waktu_event;
-        // $event->lokasi= $request->lokasi;
-        // $event->deskripsi= $request->deskripsi;
-        // $event->kategori= $request->kategori;
-        // echo $event->save();
+    }
 
+    public function edit($id)
+    {
+     
+        return view('editevent');
+         
     }
 
 }
