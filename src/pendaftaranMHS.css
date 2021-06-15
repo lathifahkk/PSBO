@@ -115,6 +115,8 @@ body{
 .wrapper .navbar .left li a:hover{
     color: #3a6d8d;
 }
+
+
 h4{
     font-style: normal;
     font-weight: bold;
@@ -193,7 +195,11 @@ b{
     font-size: 18px;
     cursor: pointer;
     text-align: center;
+
+    margin-left: 180px;
+
 }
+
 
 #btn-next:hover{
     background: white;
