@@ -1,12 +1,12 @@
 # Laporan Tugas Akhir PSBO
 <p align="center">
-  <img height="100" src="https://user-images.githubusercontent.com/60083962/121816763-a1239300-cca7-11eb-8c87-b74b56b4de1f.png"> 
-  **Paralel 2 - Kelompok 8**
+  <img height="100" src="https://user-images.githubusercontent.com/60083962/121816763-a1239300-cca7-11eb-8c87-b74b56b4de1f.png"> <br>
+  Paralel 2 - Kelompok 8
 </p>
 
 
-[Deskripsi Aplikasi](#Deskripsi-singkat-aplikasi) | [User Analysis](#User-analysis-(analisis-user,-user-story)) | [Dampak](#Dampak) | [Spesifikasi](#Spesifikasi-teknis-lingkungan-pengembangan) | [Diagram](#Use-case-diagram,-activity-diagram,-class-diagram,-ERD) | [Fitur umum](#Fitur-umum) | [OOP](#Konsep-OOP-yang-digunakan) | [Desain Pengembangan](#Tipe-desain-pengembangan-yang-digunakan-(pattern/anti-pattern)) | [Developer](#Developer-beserta-job-desc) | [Referensi](#Referensi)
-:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
+[Deskripsi Aplikasi](#1-deskripsi-singkat-aplikasi) | [User Analysis](#2-user-analysis) | [Dampak](#3-dampak) | [Spesifikasi](#4-spesifikasi-teknis-lingkungan-pengembangan) | [Konsep OOP](#5-konsep-oop-yang-digunakan)| [Tipe Desain](#6-tipe-desain-pengembangan-yang-digunakan) |[Hasil dan Pembahasan](#7-hasil-dan-pembahasan) | [Hasil Implementasi](#8-hasil-implementasi) | [Saran](#9-saran-untuk-pengembangan-selanjutnya) | [Developer](#10-developer-dan-jobdeks) | [Referensi](#referensi)
+:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---: |:---: 
 
 ## 1. Deskripsi singkat aplikasi
   Untuk mengatasi permasalahan yang ditemukan, kami sebagai pengembang mencoba membangun aplikasi dengan nama IPB’s Event pada platform berbasis website. Aplikasi IPB’s Event memungkinkan untuk menampilkan semua kegiatan yang diselenggarakan oleh internal IPB University baik yang diselenggarakan oleh mahasiswa maupun pihak kampus IPB University seperti lomba, webinar, seminar, dan sebagainya. Mahasiswa dapat melihat kegiatan yang akan diselenggarakan berdasarkan waktu pelaksanaanya pada beranda IPB Event. Mahasiswa juga dapat mendaftarkan diri secara langsung di aplikasi tersebut sebagai peserta. Selain itu, Organisasi di IPB dapat mendaftarkan kegiatan yang akan diselenggarakannya sebagai panitia pelaksana kegiatan agar kegiatannya dapat terlihat pada aplikasi. Aplikasi IPB’s Event  juga mendukung adanya informasi kegiatan yang pendaftarannya dibuka pada hari itu dan jadwal mahasiswa tersebut pada hari tersebut. Dimungkinkan untuk membangun sistem reminder kegiatan untuk membantu mengingatkan mahasiswa tentang kegiatannya.
@@ -34,17 +34,26 @@ Berikut perangkat lunak yang digunakan untuk mengembangkan IPB's Event :
 
 ### 4.2. Hardware
 Berikut spesifikasi laptop yang digunakan untuk mengembangkan IPB's Event :
-* Processor: 
+* Processor: Intel Core i5
 * GPU: 
 * RAM: GB
 * OS: Windows 10
 
 ### 4.3. Tech Stack
+* Backend 
+  * Programing Language : PHP
+  * Framework : Laravel
+  * Web Server : XAMPP
+  * DBMS : 
+* Frontend : HTML, CSS
 
 
 ## 5. Konsep OOP yang digunakan
+### Encaptulation
+### Inheritace
 
-## 6. Tipe desain pengembangan yang digunakan (pattern/anti pattern)
+
+## 6. Tipe desain pengembangan yang digunakan
 
 ## 7. Hasil dan Pembahasan
 ### 7.1. Use case diagram 
@@ -66,7 +75,7 @@ Berikut spesifikasi laptop yang digunakan untuk mengembangkan IPB's Event :
 
 ### 7.5. Arsiektur Sistem
 ### 7.6. Fungsi utama yang di kembangkan
-Fungsi utama yang di kembangkan dari IPB's Event adalah sebagai Organisasi dapat mendaftarkan suatu kegiatannya pada aplikasi ini dan muncul pada beranda aplikasi kemudian sebagin user Mahasiswa dapat mendaftarkan ke kegiatan yang ada di aplikasi ini.
+Fungsi utama yang di kembangkan dari IPB's Event adalah sebagai Organisasi dapat mendaftarkan suatu kegiatannya pada aplikasi ini dan muncul pada beranda aplikasi kemudian sebagin user Mahasiswa dapat melihat dan mendaftarkan diri kegiatan yang ada di aplikasi ini.
 ### 7.8. Fungsi CRUD
 * Create : Organisasi dapat menambahkan kegiatan yang mereka selenggarakan.
 * Read : Menampilkan kegiatan yang di daftarkan Organisasi pada beranda.
@@ -89,3 +98,5 @@ Hana Salsabila |  G64180051 | |
 
 
 ## Referensi
+* [Figma](https://www.figma.com/file/v85RjAcrhUs8eYjj5TVxZ0/PSBO-JAYA!)
+* [Trello](https://trello.com/b/0LYTtp0B/psbo-jaya)
