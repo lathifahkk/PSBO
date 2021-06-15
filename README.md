@@ -13,6 +13,7 @@
  <br>Untuk mengatasi permasalahan yang ditemukan, kami sebagai pengembang mencoba membangun aplikasi dengan nama IPB’s Event pada platform berbasis website. Aplikasi IPB’s Event memungkinkan untuk menampilkan semua kegiatan yang diselenggarakan oleh internal IPB University baik yang diselenggarakan oleh mahasiswa maupun pihak kampus IPB University seperti lomba, webinar, seminar, dan sebagainya. Mahasiswa dapat melihat kegiatan yang akan diselenggarakan berdasarkan waktu pelaksanaanya pada beranda IPB Event. Mahasiswa juga dapat mendaftarkan diri secara langsung di aplikasi tersebut sebagai peserta. Selain itu, Organisasi di IPB dapat mendaftarkan kegiatan yang akan diselenggarakannya sebagai panitia pelaksana kegiatan agar kegiatannya dapat terlihat pada aplikasi. Aplikasi IPB’s Event  juga mendukung adanya informasi kegiatan yang pendaftarannya dibuka pada hari itu dan jadwal mahasiswa tersebut pada hari tersebut. Dimungkinkan untuk membangun sistem reminder kegiatan untuk membantu mengingatkan mahasiswa tentang kegiatannya.
 
 ## 2. User analysis 
+[`^ kembali ke atas ^`](#) 
 ### 2.1. Mahasiswa
 Sebagai seorang mahasiswa IPB, saya ingin mengetahui dan mendapatkan informasi lengkap terkait event  internal di IPB yang dapat saya ikuti. Supaya saya tidak ketinggalan informasi mengenai pelaksanaan  event tersebut  dan dapat mendaftar sebagai peserta  event.
 ### 2.2. Panitia Event (Organisasi)
@@ -23,6 +24,7 @@ Sebagai panitia dari suatu  event, saya ingin  event yang kami selenggarakan dap
 Dengan adanya aplikasi ini, informasi kegiatan dapat dikemas dan tersampaikan dengan baik sesuai dengan target sasarannya. Mahasiswa dapat memperoleh informasi kegiatan berdasarkan waktu pelaksanaan dan kategori yang diinginkan. Dengan adanya informasi kegiatan yang pendaftarannya dibuka pada hari itu mengurangi kemungkinan mahasiswa melewatkan kegiatan tersebut, hal ini menghasilkan dampak baik bagi pelaksana dan mahasiswa itu sendiri. Selain itu adanya fitur jadwal saya membantu mahasiswa agar tidak melewatkan kegiatan tersebut. Hal ini dinilai dapat mengurangi kemungkinan tidak terpenuhinya target peserta kegiatan berdasarkan ketersampaian informasi.
 
 ## 4. Spesifikasi teknis lingkungan pengembangan
+[`^ kembali ke atas ^`](#) 
 ### 4.1. Sofware
 Berikut perangkat lunak yang digunakan untuk mengembangkan IPB's Event :
 * Trello
@@ -41,22 +43,30 @@ Berikut spesifikasi laptop yang digunakan untuk mengembangkan IPB's Event :
 * OS: Windows 10
 
 ### 4.3. Tech Stack
+* Frontend : HTML, CSS
 * Backend 
   * Programing Language : PHP
   * Framework : Laravel
   * Web Server : XAMPP
   * DBMS : 
-* Frontend : HTML, CSS
+
 
 
 ## 5. Konsep OOP yang digunakan
+[`^ kembali ke atas ^`](#) 
 ### Encaptulation
-### Inheritace
+Encapsulation atau pengkapsulan adalah membungkus class dan menjaga propertu di dalam class tersebut supaya tidak diakses sembarangan oleh class lainnya. Encapsulation akan mempermudah dalam penggunaan suatu objek atau pembacaan kode karena informasinya sudah satu kesatuan dan tidak perlu membaca atau mengetahui secara rinci. 
+Berikut adalah salah satu penerapan Encapsulation :
+
+### Inheritance
+Inheritance atau pewarisan adalah hubungan antara objek utama yang mewariskan attribute maupun method yang dimilikinya kepada objek baru lainnya, baik itu sebagian maupun keseluruhan. Sehingga objek baru ini akan mewarisi sifat dari objek induknya.
+Berikut adalah salah satu penerapan Inheritance :
+
 ### Abstraction
 
 
 ## 6. Tipe desain pengembangan yang digunakan
-
+[`^ kembali ke atas ^`](#) 
 ### Model 
 Model merepresentasikan struktur data dan digunakan untuk berinteraksi dengan database. Komponen model ini bertugas untuk mengolah data seperti mendapatkan data, menyimpan data, mengedit data, dan menghapus data. Berikut adalah model yang diterapkan pada sistem IPB's Event
 * Model Event
@@ -90,6 +100,7 @@ Berikut adalah Controler yang diterapkan:
 * 
 
 ## 7. Hasil dan Pembahasan
+[`^ kembali ke atas ^`](#) 
 ### 7.1. Use case diagram 
  <img src="https://user-images.githubusercontent.com/60084059/122012302-38dbcb00-cde7-11eb-8c3e-d0137e08b7ea.png">
 
@@ -117,12 +128,19 @@ Fungsi utama yang di kembangkan dari IPB's Event adalah sebagai Organisasi dapat
 * Delete : Organisasi dapat menghapus kegiatan yang telah mereka daftarkan.
 
 ## 8. Hasil Implementasi
+[`^ kembali ke atas ^`](#) 
 ### 8.1 Screenshot sistem
 ### 8.2 Link Aplikasi (Jika sudah di deploy)
 
 ## 9. Saran untuk pengembangan selanjutnya
+[`^ kembali ke atas ^`](#) 
+* Menambahkan opsi tiket kegiaatan berbayar dan menambahkan mekanisme pembayaran
+* Menambhakan fitur remainder yang terkoneksi dengan google calender atau sejenisnya
+* Menambahkan list daftar event yang diikuti
+* 
 
 ## 10. Developer dan jobdeks
+[`^ kembali ke atas ^`](#) 
  Nama |NIM | Jobdesk |
  :---:|:---:| :---:|
 Lathifah Kurnia K | G64180023 | |
@@ -132,11 +150,19 @@ Hana Salsabila |  G64180051 | |
 
 
 ## Dokumentasi
+[`^ kembali ke atas ^`](#) 
+ <br>
 * [Figma](https://www.figma.com/file/v85RjAcrhUs8eYjj5TVxZ0/PSBO-JAYA!)
 * [Trello](https://trello.com/b/0LYTtp0B/psbo-jaya)
 
 
 ## Referensi
+[`^ kembali ke atas ^`](#) 
 [MVC](https://medium.com/@sagarmaheshwary31/laravel-5-8-from-scratch-intro-setup-mvc-basics-and-views-74d46f93fe0c) 
 [Model](https://www.iltekkomputer.com/tutorial-laravel-5-7-part-3-cara-memahami-konsep-mvc-di-framework-laravel/) 
 [MVC](https://www.codetutors.org/what-mvc-is-and-how-does-this-pattern-work-in-laravel-8/)
+[MVC](https://www.niagahoster.co.id/blog/mvc-adalah)
+
+[Konsep OOP](http://repository.uinsu.ac.id/9202/1/2.%20Suendri%20-%20Modul%20Praktikum%20PBWL%202020.pdf)
+[Konsep OOP](https://glints.com/id/lowongan/oop-adalah/#.YMjzgGgza01)
+[Konsep OOP - Inheritage](https://www.dicoding.com/blog/apa-itu-oop-pada-java-beserta-contohnya/)
