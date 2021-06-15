@@ -79,7 +79,14 @@ Route::prefix('user')->name('user.')->group(function(){
     // Route::post('/home',[EventController::class,'show'] );
 });
 
+Route::post('/org/update', 'App\Http\Controllers\homeMhsController@update')->name('update');
+
+
 Route::prefix('org')->name('org.')->group(function(){
+    Route::get('detail/{idevent}', 'App\Http\Controllers\homeMhsController@detailorg')->name('detail');
+    Route::get('detail/delete/{idevent}', 'App\Http\Controllers\homeMhsController@delete')->name('delete');
+    Route::get('detail/edit/{idevent}', 'App\Http\Controllers\homeMhsController@edit')->name('edit');
+    Route::post('/update', 'App\Http\Controllers\homeMhsController@update')->name('update');
 
     Route::middleware(['guest:org','PreventBackHistory'])->group(function(){
          Route::view('/login','dashboard.org.login')->name('login');
@@ -89,6 +96,7 @@ Route::prefix('org')->name('org.')->group(function(){
     });
 
     Route::middleware(['auth:org','PreventBackHistory'])->group(function(){
+         Route::get('home', 'App\Http\Controllers\homeController@idxadm')->name('home');
          Route::view('/home','dashboard.org.home')->name('home');
          Route::post('logout',[OrgController::class,'logout'])->name('logout');
          Route::view('/eventcreate','dashboard.org.eventcreate')->name('eventcreate');

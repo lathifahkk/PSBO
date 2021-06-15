@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg></script>
 
-    <title>Login Page</title>
+    <title>Halaman Masuk Mahasiswa</title>
     <style>
         
     body{
@@ -29,7 +29,7 @@
             </div>
             <div class="right">
                 <ul>
-                    <li><a href="{{ route('user.register') }}"><button class="btn btn-outline-light" type="button" style="font-weight:bold">Register</button></li></a>
+                    <li><a href="{{ route('user.register') }}"><button class="btn btn-outline-light" type="button" style="font-weight:bold">Registrasi</button></li></a>
                 </ul>
             </div>
     </div>
@@ -53,7 +53,7 @@
                             @csrf
                             <div class="form-row">
                                 <h2>IPB University's Event</h2>
-                                <h3>LOGIN</h3>
+                                <h3>Student Login</h3>
                             </div>
                             <div class="form-row">
                                 <div class="input-div one">

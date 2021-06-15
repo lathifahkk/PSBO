@@ -1,11 +1,3 @@
-<?php
-use Illuminate\Support\Facades\DB;
-$data = DB::table('events')->get();
-
-$org = DB::table('orgs')->get();
-
-?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -20,7 +12,7 @@ $org = DB::table('orgs')->get();
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg></script>
 
 
-    <title>Buat Event</title>
+    <title>Edit Event</title>
     <style>
         body{
             background:url('/image/bgIN.png') no-repeat;
@@ -35,16 +27,16 @@ $org = DB::table('orgs')->get();
             <img src="{{url('/image/IPBEvent.png')}}" alt="IPB EVENT">
             <div class="left">
                 <ul>
-                  <li><a href="{{ route('org.home')}}">Beranda</a></li>
-                  <li><a href="{{ route('org.eventcreate')}}">Buat Event</a></li>
+                  <li><a href="#">Beranda</a></li>
+                  <li><a href="#">Buat Event</a></li>
               </ul>
             </div>
             <div class="right">
                 <ul>
                   <li>
                     <a href="#">
-                    <p>Organisasi Mahasiswa<br> 
-                            <span>Kampus</span></p>
+                      <p name='nama_organisasi'>BEM<br> 
+                        <span></span></p>
                     </a>
                   </li>
                   <li><a href="#"><button class="btnlogout">Keluar <i class="fas fa-sign-out-alt"></i></button> </a></li>
@@ -53,35 +45,22 @@ $org = DB::table('orgs')->get();
         </nav>
     </div>
     
-    <form action="add" method="post">
-    
-
+    <form action="{{ route('org.update') }}" method="POST">
     @csrf
+    <input type="hidden" name="id" value="{{$event['id']}}">
         <div class="container register-form">
             <div class="form">
                 <div class="row">
-                    @if(Session::get('success'))
-                        <script>window.location="/org/home";</script>
-                        <div class="alert alert-success">
-                        {{ Session::get('success')}}
-                    </div>   
-                    @endif
-
-                    @if(Session::get('fail'))
-                        <div class="alert alert-danger">
-                            {{ Session::get('fail')}}
-                        </div>   
-                    @endif
-
-                    <h4>Informasi Kegiatan</h4>
+                    <h4>Edit Informasi Kegiatan</h4>
                         <div class="col-md-6">
-                            <div class="form-field">
+                                <div class="form-field">
                                 <label class="label">Pelaksana</label>
-                                <input type="text" name="nama_organisasi" class="form-control" placeholder="Pelaksana" value="" required/>
+                                <input type="text" name="nama_organisasi" class="form-control" placeholder="Pelaksana" value="{{$event['nama_organisasi']}}" required/>
                             </div>
+                            
                             <div class="form-field">
                                 <label class="label">Kategori Kegiatan</label>
-                                <input list="ktgs" name="kategori" id="ktg" class="form-control" placeholder="Pilih kategori kegiatan" required="">
+                                <input list="ktgs" name="kategori" id="ktg" class="form-control" placeholder="Pilih kategori kegiatan"   value="{{$event['kategori']}}">
 
                                 <datalist id="ktgs">
                                     <option value="Lomba/Kompetisi">
@@ -93,36 +72,36 @@ $org = DB::table('orgs')->get();
                             <div class="form-field">
                                 
                                 <label class="label">Nama Kegiatan</label>
-                                <input type="text" name="nama_event" class="form-control" placeholder="Isi nama kegiatan yang diselenggarakan" value="" required/>
+                                <input type="text" name="nama_event" class="form-control" placeholder="Isi nama kegiatan yang diselenggarakan" value="{{$event['nama_event']}}" required/>
                             </div>
                             
                             <div class="form-field">
                                 <label class="label">Tanggal Pelaksanaan</label>
-                                <input type="date" name="tanggal_pelaksanaan" class="form-control" placeholder="Tanggal pelaksanaan" value="" required/>
+                                <input type="date" name="tanggal_pelaksanaan" class="form-control" placeholder="Tanggal pelaksanaan" value="{{$event['tanggal_pelaksanaan']}}" required/>
                             </div>
                             <div class="form-field">
                                 <label class="label">Waktu Pelaksanaan</label>
-                                <input type="time" name="waktu_pelaksanaan" class="form-control" placeholder="Waktu pelaksanaan" value="" required/>
+                                <input type="time" name="waktu_pelaksanaan" class="form-control" placeholder="Waktu pelaksanaan" value="{{$event['waktu_pelaksanaan']}}" required/>
                             </div>
                                     </div>
                         <div class="col-md-6">
                             <div class="form-field">
                                 <label class="label">Deskripsi</label>
-                                <textarea class="form-control" name="deskripsi" placeholder="Deskripsikan kegiatan pada bagian ini" value="" required></textarea>     
+                                <textarea class="form-control" name="deskripsi" placeholder="Deskripsikan kegiatan pada bagian ini" value="{{$event['deskripsi']}}" required></textarea>     
                             </div>
                             <div class="form-field">
                                 <label class="label">Lokasi</label>
-                                <input type="text" name="lokasi" class="form-control" placeholder="Lokasi pelaksanaan" value="" required/>
+                                <input type="text" name="lokasi" class="form-control" placeholder="Lokasi pelaksanaan" value="{{$event['lokasi']}}" required/>
                             </div>
                             <div class="form-field">
                                 <label class="label">Jumlah Tiket</label>
-                                <input type="number" name="jumlah_tiket" class="form-control" placeholder="0" value="" required/>
+                                <input type="number" name="jumlah_tiket" class="form-control" placeholder="0" value="{{$event['jumlah_tiker']}}" required/>
                             </div>
                             <div class="form-field">
                                 <label class="label">Poster</label>
-                                <input type="file" name="poster" class="form-control" placeholder="Tambahkan file" value="" required/>
+                                <input type="file" name="poster" class="form-control" placeholder="Tambahkan file" value="{{$event['poster']}}" required/>
                             </div>
-                            <button type="submit" class="btn1">Berikutnya</button>
+                            <button type="submit" class="btn1">Simpan</button>
                             
                         </div>
                        
@@ -132,7 +111,8 @@ $org = DB::table('orgs')->get();
         </div>
 
         </div> 
-    </section>
+
+    </form>
     <script type="text/javascript" src="login page main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>

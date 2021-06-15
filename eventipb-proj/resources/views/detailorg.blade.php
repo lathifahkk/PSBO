@@ -22,41 +22,44 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="navbar">
-        <img src="{{url('/image/IPBEvent.png')}}" alt="IPB EVENT">
+        <nav class="navbar ">
+            <img src="{{url('/image/IPBEvent.png')}}" alt="IPB EVENT">
             <div class="left">
                 <ul>
-                  <li><a href="{{ route('user.home') }}">Beranda</a></li>
+                  <li><a href="{{ route('org.home') }}">Beranda</a></li>
               </ul>
             </div>
             <div class="right">
-            <ul>
+                <ul>
                   <li>
                     <a>
-                    <p>Mahasiswa Ambisius<br><span>G6000001</span></p>
+                    <p>Organisasi Mahasiswa<br> 
+                            <span>Kampus</span></p>
                     </a>
                   </li>
                   <li>
-                        <a href="{{ route('user.logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><button class="btnlogout">Keluar <i class="fas fa-sign-out-alt"></i></button> </a>
-                        <form action="{{ route('user.logout') }}" method="post" class="d-none" id="logout-form">@csrf</form>
+                        <a href="{{ route('org.logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><button class="btnlogout">Keluar <i class="fas fa-sign-out-alt"></i></button> </a>
+                        <form action="{{ route('org.logout') }}" method="post" class="d-none" id="logout-form">@csrf</form>
                     </li>
-                  </ul>  
+                </ul>               
             </div>
-        </div>
+        </nav>
     </div>
     <section class="desk">
         <div class="container">
-
             <div class="form">
                 <div class="row">
                     <div class="col-md-7">
                         <div class="deskripsi">
                             <div class="card" style="width:600px;"> <!-- bisa ditambah (border: none;) buat ilangin bordernya*/-->
                                 <img class="card-img-top" src="{{url('/image/poster2.png')}}" alt="Card image" style="width:100%">
-                                <div class="card-body">
-                                    <h4 class="upperjudul1">Deskripsi Event</h4>
-                                    <p class="card-text">{{$event['deskripsi']}}</p>
-                                </div>
+                                
+
+                                    <div class="card-body">
+                                        <h4 class="upperjudul1">Deskripsi Event</h4>
+                                        <p class="card-text">{{$event['deskripsi']}}</p>
+                                    </div>
+                                    
                             </div>
                         </div>
                     </div>
@@ -64,6 +67,7 @@
                     <div class="col-md-5">
                         <div class="event-detail">
                             <div class="detail-content">
+                           
                                 <div class="top-detail">
                                     <h6>{{$event['kategori']}}</h6>
                                     <h4>{{$event['nama_event']}}</h4>
@@ -84,27 +88,30 @@
                                     <div class="loc">
                                         <a><i class="fas fa-map-marker-alt" aria-hidden="true" style="margin-right: 10px;"></i>{{$event['lokasi']}}</a>                                 
                                     </div>
-                                    
+
                                     <div class="daftar">
-                                        <div class="center">
-                                            <button type="button" class="btn1">Daftar</button>
-                                        </div>
+                                    <a href="edit/{{ $event->idevent }}">
+                                        <button  class="btn1">Sunting</button>
+                                    </a>
+                                    <a href="delete/{{ $event->idevent }}">
+                                    <button type="button" class="btn1" id="btn-remove">Hapus</button>                                     
+                                    </a>
                                     </div>
-                                    
-
                                 </div>
-                                
-
+                           
                             </div>
-
-                        </div>
-                                                
+                        </div>           
                     </div>   
+                </div>
             </div>
-
-        </div>
         </div>       
     </section>
+    <!-- <script>
+        function relocate_home()
+        {
+            location.href = "/pendaftaranMhs";
+        }
+    </script> -->
     <script type="text/javascript" src="login page main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
