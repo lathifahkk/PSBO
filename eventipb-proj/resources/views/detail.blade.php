@@ -25,7 +25,7 @@
         <img src="{{url('/image/IPBEvent.png')}}" alt="IPB EVENT">
             <div class="left">
                 <ul>
-                  <li><a href="#">Beranda</a></li>
+                  <li><a href="{{ route('user.home') }}">Beranda</a></li>
               </ul>
             </div>
             <div class="right">

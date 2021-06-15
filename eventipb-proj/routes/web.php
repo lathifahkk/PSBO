@@ -57,6 +57,7 @@ Route::prefix('user')->name('user.')->group(function(){
     // Route::get('/detail/{$id_event}', function(Request $request, $id_event){
     //     return view('welcome');
     // });
+    Route::get('detail/{idevent}', 'App\Http\Controllers\homeMhsController@detail')->name('detail');
 
     Route::middleware(['guest:web', 'PreventBackHistory'])->group(function(){
           Route::view('/login','dashboard.user.login')->name('login');
