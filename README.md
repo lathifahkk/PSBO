@@ -9,7 +9,8 @@
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---: |:---: 
 
 ## 1. Deskripsi singkat aplikasi
-  Untuk mengatasi permasalahan yang ditemukan, kami sebagai pengembang mencoba membangun aplikasi dengan nama IPB’s Event pada platform berbasis website. Aplikasi IPB’s Event memungkinkan untuk menampilkan semua kegiatan yang diselenggarakan oleh internal IPB University baik yang diselenggarakan oleh mahasiswa maupun pihak kampus IPB University seperti lomba, webinar, seminar, dan sebagainya. Mahasiswa dapat melihat kegiatan yang akan diselenggarakan berdasarkan waktu pelaksanaanya pada beranda IPB Event. Mahasiswa juga dapat mendaftarkan diri secara langsung di aplikasi tersebut sebagai peserta. Selain itu, Organisasi di IPB dapat mendaftarkan kegiatan yang akan diselenggarakannya sebagai panitia pelaksana kegiatan agar kegiatannya dapat terlihat pada aplikasi. Aplikasi IPB’s Event  juga mendukung adanya informasi kegiatan yang pendaftarannya dibuka pada hari itu dan jadwal mahasiswa tersebut pada hari tersebut. Dimungkinkan untuk membangun sistem reminder kegiatan untuk membantu mengingatkan mahasiswa tentang kegiatannya.
+[`^ kembali ke atas ^`](#) 
+ <br>Untuk mengatasi permasalahan yang ditemukan, kami sebagai pengembang mencoba membangun aplikasi dengan nama IPB’s Event pada platform berbasis website. Aplikasi IPB’s Event memungkinkan untuk menampilkan semua kegiatan yang diselenggarakan oleh internal IPB University baik yang diselenggarakan oleh mahasiswa maupun pihak kampus IPB University seperti lomba, webinar, seminar, dan sebagainya. Mahasiswa dapat melihat kegiatan yang akan diselenggarakan berdasarkan waktu pelaksanaanya pada beranda IPB Event. Mahasiswa juga dapat mendaftarkan diri secara langsung di aplikasi tersebut sebagai peserta. Selain itu, Organisasi di IPB dapat mendaftarkan kegiatan yang akan diselenggarakannya sebagai panitia pelaksana kegiatan agar kegiatannya dapat terlihat pada aplikasi. Aplikasi IPB’s Event  juga mendukung adanya informasi kegiatan yang pendaftarannya dibuka pada hari itu dan jadwal mahasiswa tersebut pada hari tersebut. Dimungkinkan untuk membangun sistem reminder kegiatan untuk membantu mengingatkan mahasiswa tentang kegiatannya.
 
 ## 2. User analysis 
 ### 2.1. Mahasiswa
@@ -51,9 +52,42 @@ Berikut spesifikasi laptop yang digunakan untuk mengembangkan IPB's Event :
 ## 5. Konsep OOP yang digunakan
 ### Encaptulation
 ### Inheritace
+### Abstraction
 
 
 ## 6. Tipe desain pengembangan yang digunakan
+
+### Model 
+Model merepresentasikan struktur data dan digunakan untuk berinteraksi dengan database. Komponen model ini bertugas untuk mengolah data seperti mendapatkan data, menyimpan data, mengedit data, dan menghapus data. Berikut adalah model yang diterapkan pada sistem IPB's Event
+* Model Event
+* Model Org
+* Model User
+* Model homeMHS
+
+### View
+View merupakan User Interface dari aplikasi. View berfungsi untuk menampilkan informasi atau merepresentasikan tampilan kepada Pengguna.
+Laravel memiliki fungsi Blade yang digunakan untuk menampilkan View pada pengguna.
+Beriku adalah penerapan View pada Mahasiswa :
+* Halaman Registrasi : halaman awal yang akan di tampilan untuk melakukan registrasi
+* Halaman Login : halaman awal yang akan di tampilkan untuk melakukan login untuk masuk ke aplikasi.
+* Halaman Home : halaman yang akan menampilkan kegiatan yang sedang membuka pendaftaran.
+* Halaman Deskripsi Event : halaman yang berisi informasi dari kegiatan yang dipilih mahasiswa.
+* Halaman Pendaftaran : halaman yang akan digunakan mahasiswa ketika akan mendaftar di suatu kegiatan
+
+Berikut adalah penerapan View pada Organisasi Panitia Event
+* Halaman Registrasi : halaman awal yang akan di tampilan untuk melakukan registrasi
+* Halaman Login : halaman awal yang akan di tampilkan untuk melakuakn login untuk masuk ke aplikasi
+* Halaman Home : halaman yang akan menampilkan kegiatan yang sedang membuka pendaftaran.
+* Halaman Create Event : berisin formulir untuk membuat informasi kegiatan.
+* Halaman Deskripsi Event : halaman yang berisi informasi dari kegiatan yang dipilih. Pada halaman ini User Organisasi dapat mengedit infomasi kegiatan  dan dapat pula menghapus informasi kegiatan yang telah Organisasi buat.
+* Halaman Edit Event : halaman yang digunakan oleh Organisasi untuk mengedit informasi dari kegiatan yang telah Organisasi buat
+
+
+
+### Controler 
+Controler berfungsi untuk menjebatani antara Model dengan View. Controler akan menerima dan memerespon respon yang datang dam nengubah ke dalam bentuk perintah terhadap view dan model.
+Berikut adalah Controler yang diterapkan:
+* 
 
 ## 7. Hasil dan Pembahasan
 ### 7.1. Use case diagram 
@@ -80,11 +114,11 @@ Fungsi utama yang di kembangkan dari IPB's Event adalah sebagai Organisasi dapat
 * Create : Organisasi dapat menambahkan kegiatan yang mereka selenggarakan.
 * Read : Menampilkan kegiatan yang di daftarkan Organisasi pada beranda.
 * Update : Organisasi dapat mensunting informasi dari kegiatan yang mereka daftarkan.
-* Delet : Organisasi dapat menghapus kegiatan yang telah mereka daftarkan.
+* Delete : Organisasi dapat menghapus kegiatan yang telah mereka daftarkan.
 
 ## 8. Hasil Implementasi
 ### 8.1 Screenshot sistem
-### Link Aplikasi (Jika sudah di deploy)
+### 8.2 Link Aplikasi (Jika sudah di deploy)
 
 ## 9. Saran untuk pengembangan selanjutnya
 
@@ -97,6 +131,12 @@ Ulfainil Aisyah |  G64180045 |
 Hana Salsabila |  G64180051 | |
 
 
-## Referensi
+## Dokumentasi
 * [Figma](https://www.figma.com/file/v85RjAcrhUs8eYjj5TVxZ0/PSBO-JAYA!)
 * [Trello](https://trello.com/b/0LYTtp0B/psbo-jaya)
+
+
+## Referensi
+[MVC](https://medium.com/@sagarmaheshwary31/laravel-5-8-from-scratch-intro-setup-mvc-basics-and-views-74d46f93fe0c) 
+[Model](https://www.iltekkomputer.com/tutorial-laravel-5-7-part-3-cara-memahami-konsep-mvc-di-framework-laravel/) 
+[MVC](https://www.codetutors.org/what-mvc-is-and-how-does-this-pattern-work-in-laravel-8/)
