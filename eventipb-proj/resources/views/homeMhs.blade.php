@@ -1,3 +1,9 @@
+
+<?php
+use Illuminate\Support\Facades\DB;
+$data = DB::table('events')->get();
+
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -95,7 +101,7 @@
                         <div class = "product-info-top">
                             <h2 class = "sm-title">{{$event['tanggal_pelaksanaan']}}</h2>
                         </div>
-                        <a href = "/deskEvent" class = "product-name">{{$event['nama_event']}}</a>
+                        <a href="detail/{{$event['idevent']}}" class = "product-name">{{$event['nama_event']}}</a>
                         <p class = "lokasi">{{$event['lokasi']}}</p>
                     </div>
 

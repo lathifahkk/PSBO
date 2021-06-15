@@ -61,6 +61,6 @@ class UserController extends Controller
     }
 
     function detail($id_event){
-        
+        return Event::find($id_event);
     }
 }

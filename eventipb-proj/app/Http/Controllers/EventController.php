@@ -9,6 +9,16 @@ use App\Models\Event;
 
 class EventController extends Controller
 {
+    public function deskripsi(){
+        return view('welcome');
+        // $data['events'] = Event::all();
+        // return view('deskEvent')->with($data);;
+    }
+    
+    function index($id_event){
+        // return Event::find($id_event);
+        return('halooooowww');
+    }
     // public function show(){
     //     $user = Event::all();
     //     return redirect()->route('user.home', ['events'=>$data]);

@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\DB;
 class Event extends Model
 { 
     use HasFactory;
+
+    protected $primaryKey = 'idevent';
     protected $data = "events";
     // public function allData()
     // {

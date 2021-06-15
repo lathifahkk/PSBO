@@ -12,9 +12,10 @@ class homeMhsController extends Controller
         $data = Event::all();
         return view('homeMhs', ['events'=>$data]);
     }
-    public function index_event()
-    {
-        $data = Event::all();
-        return view('konfirmasievent', ['events'=>$data]);
+    
+    public function detail($idevent){
+        $data = Event::find($idevent);
+        return view('detail',['event'=>$data] );
     }
+
 }

@@ -3,8 +3,8 @@
 use Illuminate\Support\Facades\Route;
 // use App\Http\Controllers\LoginController;
 // // use App\Http\Controllers\EventController;
-// use Illuminate\Http\Request;
-// use App\Http\Controllers;
+use Illuminate\Http\Request;
+use App\Http\Controllers;
 // use App\Http\Controllers\homeMhsController;
 // use App\Http\Controllers\deskEventController;
 use App\Http\Controllers\User\UserController;
@@ -28,8 +28,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('homeMhs', 'App\Http\Controllers\homeMhsController@index')->name('homeMhs');
+Route::get('detail/{idevent}', 'App\Http\Controllers\homeMhsController@detail')->name('detail');
 
-// Route::get('/login', 'App\Http\Controllers\LoginController@index')->name('login');
+
 // Route::post('/login/checklogin', 'App\Http\Controllers\LoginController@checklogin')->name('checklogin');
 // Route::get('/login/homeOrg', 'App\Http\Controllers\LoginController@successlogin')->name('successlogin');
 // Route::get('/login/logout', 'App\Http\Controllers\LoginController@logout')->name('logout');
@@ -41,26 +43,37 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/user/detail/{$id_event}', [EventController::class,'index'])->name('detail');
 
-Route::get('/user/detail/{$id_event}', [UserController::class,'detail'])->name('detail');
+// Route::get('/user/detail/{$id_event}', [UserController::class,'detail'])->name('detail');
+
+// Route::prefix('user')->group(function(){
+//     Route::get('/detail/{$id_event}', function(Request $request, $id_event){
+//         return view('welcome');
+//     });
+// });
 
 Route::prefix('user')->name('user.')->group(function(){
-  
+    // Route::get('/detail/{$id_event}', function(Request $request, $id_event){
+    //     return view('welcome');
+    // });
+
     Route::middleware(['guest:web', 'PreventBackHistory'])->group(function(){
           Route::view('/login','dashboard.user.login')->name('login');
           Route::view('/register','dashboard.user.register')->name('register');
           Route::post('/create',[UserController::class,'create'])->name('create');
           Route::post('/check',[UserController::class,'check'])->name('check');
-    });
+          
+        });
 
     Route::middleware(['auth:web', 'PreventBackHistory'])->group(function(){
         Route::view('/home','dashboard.user.home')->name('home');
+        // Route::get('/detail/{$id_event}', 'App\Http\Controllers\EventController@index')->name('detail');
         Route::post('/logout',[UserController::class,'logout'])->name('logout');
         Route::get('/add-new',[UserController::class,'add'])->name('add');
     });
-
-    Route::get('/detail/{$id_event}', [UserController::class,'detail'])->name('detail');
+    
+    // Route::get('/detail/{$id_event}', [UserController::class,'detail'])->name('detail');
 
     // Route::post('/home',[EventController::class,'show'] );
 });

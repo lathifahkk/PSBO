@@ -1,9 +1,3 @@
-<?php
-use Illuminate\Support\Facades\DB;
-$data = DB::table('events')->get();
-
-?>
-
 <!doctype html>
 <html lang="en">
 <head>
