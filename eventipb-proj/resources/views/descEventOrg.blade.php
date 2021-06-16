@@ -33,9 +33,9 @@
                 <ul>
                   <li>
                   <a href="#">
-                      <p>BEM Fasilkom<br> <span>IPB Univeristy</span></p><img src="{{url('/image/user.svg')}}" alt="Admin" width="40"><i class="fas fa-angle-down"></i>
-                    </a>
-                     
+                  <p>Organisasi Mahasiswa<br> 
+                            <span>Kampus</span>/p>
+                                        
                     <div class="dropdown">
                         <ul>
                           <li><a href="#"><i class="fas fa-user" style="margin-right: 10px;"></i> Profile</a></li>

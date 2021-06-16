@@ -40,7 +40,7 @@ $data = DB::table('events')->get();
                 <ul>
                   <li>
                     <a href="#">
-                    <p>Mahasiswa Ambisius<br> 
+                    <p>Mahasiswa<br> 
                         <span>G61110067</span>
                     </p>
                     </a>

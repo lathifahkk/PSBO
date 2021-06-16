@@ -65,7 +65,7 @@ $org = DB::table('organisasis')->get();
                 <div class = "product">
                     <div class = "product-content">
                         <div class = "product-img">
-                            <img src = "{{url('/image/poster1.png')}}"  alt = "product image">
+                            <img src = "{{url('image/'.$event->poster)}}"  alt = "product image">
                         </div>
                     </div>
 

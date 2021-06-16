@@ -114,6 +114,7 @@
                             <div class="form-field">
                                 <label class="label">Poster</label>
                                 <input type="file" name="poster" class="form-control" placeholder="Tambahkan file" value="" required/>
+                                
                             </div>
                             <button type="submit" class="btn1">Berikutnya</button>
                             

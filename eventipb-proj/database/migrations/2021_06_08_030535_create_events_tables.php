@@ -22,7 +22,6 @@ class CreateEventsTables extends Migration
             $table->string('lokasi');
             $table->string('deskripsi');
             $table->string('kategori');
-            $table->integer('jumlah_tiket');
             $table->mediumText('poster');
             $table->string('nama_organisasi');
             

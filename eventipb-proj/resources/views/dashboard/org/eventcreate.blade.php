@@ -114,10 +114,7 @@ $org = DB::table('orgs')->get();
                                 <label class="label">Lokasi</label>
                                 <input type="text" name="lokasi" class="form-control" placeholder="Lokasi pelaksanaan" value="" required/>
                             </div>
-                            <div class="form-field">
-                                <label class="label">Jumlah Tiket</label>
-                                <input type="number" name="jumlah_tiket" class="form-control" placeholder="0" value="" required/>
-                            </div>
+                            
                             <div class="form-field">
                                 <label class="label">Poster</label>
                                 <input type="file" name="poster" class="form-control" placeholder="Tambahkan file" value="" required/>

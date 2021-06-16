@@ -26,7 +26,8 @@
             <img src="{{url('/image/IPBEvent.png')}}" alt="IPB EVENT">
             <div class="left">
                 <ul>
-                  <li><a href="{{ route('org.home') }}">Beranda</a></li>
+                    <li><a href="{{ route('org.home')}}">Beranda</a></li>
+                    <li><a href="{{ route('org.eventcreate')}}">Buat Event</a></li>
               </ul>
             </div>
             <div class="right">
@@ -52,7 +53,7 @@
                     <div class="col-md-7">
                         <div class="deskripsi">
                             <div class="card" style="width:600px;"> <!-- bisa ditambah (border: none;) buat ilangin bordernya*/-->
-                                <img class="card-img-top" src="{{url('/image/poster2.png')}}" alt="Card image" style="width:100%">
+                                <img class="card-img-top" src="{{url('image/'.$event->poster)}}" alt="Card image" style="width:100%">
                                 
 
                                     <div class="card-body">

@@ -33,7 +33,8 @@
             <ul>
                   <li>
                     <a>
-                    <p>Mahasiswa Ambisius<br><span>G6000001</span></p>
+                    <p>Mahasiswa<br>
+                    <span>G6000001</span></p>
                     </a>
                   </li>
                   <li>
@@ -52,7 +53,7 @@
                     <div class="col-md-7">
                         <div class="deskripsi">
                             <div class="card" style="width:600px;"> <!-- bisa ditambah (border: none;) buat ilangin bordernya*/-->
-                                <img class="card-img-top" src="{{url('/image/poster2.png')}}" alt="Card image" style="width:100%">
+                                <img class="card-img-top" src="{{url('image/'.$event->poster)}}" alt="Card image" style="width:100%">
                                 <div class="card-body">
                                     <h4 class="upperjudul1">Deskripsi Event</h4>
                                     <p class="card-text">{{$event['deskripsi']}}</p>

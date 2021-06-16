@@ -40,7 +40,7 @@ $data = DB::table('events')->get();
                     <ul>
                     <li>
                         <a href="#">
-                        <p>Mahasiswa Ambisius<br> 
+                        <p>Mahasiswa<br> 
                             <span>G61110067</span></p>
                         </a>
                     </li>
@@ -53,7 +53,7 @@ $data = DB::table('events')->get();
             </nav>
         </div>
         <div class="row">
-            <div class="col-sm-9">
+            <div class="col-sm-11">
                 <div class="topsection">
                     <div class="search_wrap search_wrap_3">
                         <div class="search_box">
@@ -62,29 +62,6 @@ $data = DB::table('events')->get();
                                 <i class="fas fa-search" style="color: #FFF;"></i>
                             </div>
                         </div>
-                    </div>
-
-                    <div class = "category-head">
-                        <ul> 
-                            <div class = "category-title active" id = "all">
-                                <li>All</li>
-                            </div>                       
-                            <div class = "category-title" id = "culture">
-                                <li>Culture</li>
-                            </div>
-                            <div class = "category-title" id = "politics">
-                                <li>Politics</li>
-                            </div>
-                            <div class = "category-title" id = "finance">
-                                <li>Finance</li>
-                            </div>
-                            <div class = "category-title" id = "business">
-                                <li>Business</li>
-                            </div>
-                            <div class = "category-title" id = "sports">
-                                <li>Sports</li>
-                            </div>
-                        </ul>
                     </div>
                 </div>
 
@@ -95,7 +72,7 @@ $data = DB::table('events')->get();
                     <div class = "product">
                         <div class = "product-content">
                             <div class = "product-img">
-                                <img src = "{{url('/image/poster1.png')}}" alt = "product image">
+                                <img src = "{{url('image/'.$event->poster)}}" alt = "product image">
                             </div>
                         </div>
 
@@ -115,24 +92,7 @@ $data = DB::table('events')->get();
                 @endforeach
                 </div>
                                 
-            </div>
-            <div class="col-sm-3" >
-                <div class="luaranjadwal">
-                    <div class="jadwalsaya">
-                        <center>
-                            <p>Jadwal saya</p>
-                        </center>
-                        <div class="events">
-                            <div class="event">
-                                <h6 class = "tglevent">Rabu, 16 Agustus 2021</h6>
-                                <a href = "#" class = "namaevent">How to train your dragon?</a>
-                            </div>    
-                        </div>
-        
-                    </div>
-                </div>
-                
-            </div>
+            
         </div>
         <script type="text/javascript" src="login page main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
