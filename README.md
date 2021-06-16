@@ -26,6 +26,7 @@ Dengan adanya aplikasi ini, informasi kegiatan dapat dikemas dan tersampaikan de
 ## 4. Spesifikasi teknis lingkungan pengembangan
 [`^ kembali ke atas ^`](#) 
 ### 4.1. Sofware
+![software](https://user-images.githubusercontent.com/60083962/122145336-40e74980-ce7f-11eb-9627-ec605ea0ceac.png)
 Berikut perangkat lunak yang digunakan untuk mengembangkan IPB's Event :
 * Trello
 * Github
