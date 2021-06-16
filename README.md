@@ -144,7 +144,7 @@ Berikut adalah Controler yang diterapkan:
  <img height="800" src="https://user-images.githubusercontent.com/60084059/122012308-3aa58e80-cde7-11eb-851b-673923397350.png">
  
 ### 7.3. Class diagram
- <img height="1200" src="![PSBO Jaya-Rev Class Diagram](https://user-images.githubusercontent.com/54407018/122148031-22378180-ce84-11eb-8330-e6d26e17c20e.jpg) ">
+ <img height="1200" src="">
 
 ### 7.4. Entity Relationship Diagram (ERD)
  <img height="800" src="https://user-images.githubusercontent.com/60084059/122012313-3aa58e80-cde7-11eb-93ad-2a0ca08f28f1.png">
