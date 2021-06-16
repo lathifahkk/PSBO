@@ -129,7 +129,11 @@ Berikut adalah penerapan View pada Organisasi Panitia Event
 ### Controler 
 Controler berfungsi untuk menjebatani antara Model dengan View. Controler akan menerima dan memerespon respon yang datang dam nengubah ke dalam bentuk perintah terhadap view dan model.
 Berikut adalah Controler yang diterapkan:
-* 
+* Auth Controller
+* Event Controller
+* Home Controller
+* User Controller
+* Organisasi Controller
 
 ## 7. Hasil dan Pembahasan
 [`^ kembali ke atas ^`](#) 
