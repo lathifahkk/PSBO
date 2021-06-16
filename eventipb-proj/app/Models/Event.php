@@ -12,6 +12,8 @@ class Event extends Model
 
     protected $primaryKey = 'idevent';
     protected $data = "events";
+    public $timestamps=false;
+
     // public function allData()
     // {
     //     return DB::table('events')->get();

@@ -61,7 +61,6 @@ $org = DB::table('organisasis')->get();
             <p class="upperjudul">Kegiatan Saya</p>
             <div class = "product-items">
             @foreach($data as $event) 
-                @if($event->nama_organisasi=="BEM O")
                 <!-- single product -->
                 <div class = "product">
                     <div class = "product-content">
@@ -83,7 +82,6 @@ $org = DB::table('organisasis')->get();
                     </div>
                 </div>
                 <!-- end of single product -->
-                @endif
             @endforeach     
             </div> 
                        
