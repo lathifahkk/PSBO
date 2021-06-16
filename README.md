@@ -104,7 +104,7 @@ Model merepresentasikan struktur data dan digunakan untuk berinteraksi dengan da
 * Model Event
 * Model Org
 * Model User
-* Model homeMHS
+
 
 ### View
 View merupakan User Interface dari aplikasi. View berfungsi untuk menampilkan informasi atau merepresentasikan tampilan kepada Pengguna.
@@ -149,10 +149,15 @@ Berikut adalah Controler yang diterapkan:
 ### 7.4. Entity Relationship Diagram (ERD)
  <img height="800" src="https://user-images.githubusercontent.com/60084059/122012313-3aa58e80-cde7-11eb-93ad-2a0ca08f28f1.png">
 
+### 7.5. Arsitektur Sistem
+![image](https://user-images.githubusercontent.com/60084059/122150563-28c7f800-ce88-11eb-8fad-17943e36ad49.png)
+- User melakukan reuest ke Controler
+- Controler akan menghubungin Model untuk berinteraksi dengan Data Base
+- Kemudian Controler akan merender Respon ke view 
+- kemudian terpresentasikan pada user
 
-### 7.5. Arsiektur Sistem
 ### 7.6. Fungsi utama yang di kembangkan
-Fungsi utama yang di kembangkan dari IPB's Event adalah sebagai Organisasi dapat mendaftarkan suatu kegiatannya pada aplikasi ini dan muncul pada beranda aplikasi kemudian sebagin user Mahasiswa dapat melihat dan mendaftarkan diri kegiatan yang ada di aplikasi ini.
+Fungsi utama yang dikembangkan dari IPB's Event adalah sebagai Organisasi dapat mendaftarkan suatu kegiatannya pada aplikasi ini dan muncul pada beranda aplikasi kemudian sebagin user Mahasiswa dapat melihat dan mendaftarkan diri kegiatan yang ada di aplikasi ini.
 ### 7.8. Fungsi CRUD
 * Create : Organisasi dapat menambahkan kegiatan yang mereka selenggarakan.
 * Read : Menampilkan kegiatan yang di daftarkan Organisasi pada beranda.
@@ -162,8 +167,22 @@ Fungsi utama yang di kembangkan dari IPB's Event adalah sebagai Organisasi dapat
 ## 8. Hasil Implementasi
 [`^ kembali ke atas ^`](#) 
 ### 8.1 Screenshot sistem
+* ORGANISASI
+  * Page Login
 ![orglog](https://user-images.githubusercontent.com/60083962/122143827-72aae100-ce7c-11eb-8d47-0d81902c2487.png)
+  * Page Register  
 ![orgreg](https://user-images.githubusercontent.com/60083962/122143899-9706bd80-ce7c-11eb-8d19-5e93e15436a0.png)
+  * Page Home 
+ ![homeORG](https://user-images.githubusercontent.com/60084059/122151525-eacbd380-ce89-11eb-8c68-9ac3302bcd43.png)
+  * Page Deskripsi Event
+ ![detailORG](https://user-images.githubusercontent.com/60084059/122151518-e8697980-ce89-11eb-9df7-d403d8cf05a3.png)
+
+
+* Mahasiswa
+  * Page Deskripsi Event
+![detailMHS](https://user-images.githubusercontent.com/60084059/122151502-e0a9d500-ce89-11eb-838c-e12f10329dda.png)
+  * 
+  
 
 
 ### 8.2 Link Aplikasi (Jika sudah di deploy)
@@ -173,7 +192,6 @@ Fungsi utama yang di kembangkan dari IPB's Event adalah sebagai Organisasi dapat
 * Menambahkan opsi tiket kegiaatan berbayar dan menambahkan mekanisme pembayaran
 * Menambhakan fitur remainder yang terkoneksi dengan google calender atau sejenisnya
 * Menambahkan list daftar event yang diikuti
-* 
 
 ## 10. Developer dan jobdeks
 [`^ kembali ke atas ^`](#) 
