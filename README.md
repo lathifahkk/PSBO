@@ -71,8 +71,28 @@ public function detailorg($idevent){
 ### Inheritance
 Inheritance atau pewarisan adalah hubungan antara objek utama yang mewariskan attribute maupun method yang dimilikinya kepada objek baru lainnya, baik itu sebagian maupun keseluruhan. Sehingga objek baru ini akan mewarisi sifat dari objek induknya.
 Berikut adalah salah satu penerapan Inheritance :
+```
+class Org extends Authenticatable
+{
+    use HasFactory, Notifiable;
 
-### Abstraction
+    protected $fillable = [
+        'name',
+        'email',
+        'lembaga',
+        'password',
+    ];
+
+    protected $hidden = [
+        'password',
+        'remember_token',
+    ];
+
+    protected $casts = [
+        'email_verified_at' => 'datetime',
+    ];
+}
+```
 
 
 ## 6. Tipe desain pengembangan yang digunakan
