@@ -39,9 +39,9 @@ Berikut perangkat lunak yang digunakan untuk mengembangkan IPB's Event :
 
 ### 4.2. Hardware
 Berikut spesifikasi laptop yang digunakan untuk mengembangkan IPB's Event :
-* Processor: Intel Core i5
+* Processor: Intel Core i5-6200U CPU @ 2.30GHz 2.40
 * GPU: 
-* RAM: GB
+* RAM: 8.00GB
 * OS: Windows 10
 
 ### 4.3. Tech Stack
@@ -50,7 +50,7 @@ Berikut spesifikasi laptop yang digunakan untuk mengembangkan IPB's Event :
   * Programing Language : PHP
   * Framework : Laravel
   * Web Server : XAMPP
-  * DBMS : 
+  * DBMS : MYSQL
 
 
 
