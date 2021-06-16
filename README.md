@@ -58,8 +58,8 @@ Berikut spesifikasi laptop yang digunakan untuk mengembangkan IPB's Event :
 Encapsulation atau pengkapsulan adalah membungkus class dan menjaga propertu di dalam class tersebut supaya tidak diakses sembarangan oleh class lainnya. Encapsulation akan mempermudah dalam penggunaan suatu objek atau pembacaan kode karena informasinya sudah satu kesatuan dan tidak perlu membaca atau mengetahui secara rinci. 
 Berikut adalah salah satu penerapan Encapsulation :
 ```
-class homeMhsController extends Controller
 ...
+class homeMhsController extends Controller
 {
 public function detailorg($idevent){
         $data = Event::find($idevent);
