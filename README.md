@@ -10,7 +10,7 @@
 
 ## 1. Deskripsi singkat aplikasi
 [`^ kembali ke atas ^`](#) 
- <br>Untuk mengatasi permasalahan yang ditemukan, kami sebagai pengembang mencoba membangun aplikasi dengan nama IPB’s Event pada platform berbasis website. Aplikasi IPB’s Event memungkinkan untuk menampilkan semua kegiatan yang diselenggarakan oleh internal IPB University baik yang diselenggarakan oleh mahasiswa maupun pihak kampus IPB University seperti lomba, webinar, seminar, dan sebagainya. Mahasiswa dapat melihat kegiatan yang akan diselenggarakan berdasarkan waktu pelaksanaanya pada beranda IPB Event. Mahasiswa juga dapat mendaftarkan diri secara langsung di aplikasi tersebut sebagai peserta. Selain itu, Organisasi di IPB dapat mendaftarkan kegiatan yang akan diselenggarakannya sebagai panitia pelaksana kegiatan agar kegiatannya dapat terlihat pada aplikasi. Aplikasi IPB’s Event  juga mendukung adanya informasi kegiatan yang pendaftarannya dibuka pada hari itu dan jadwal mahasiswa tersebut pada hari tersebut. Dimungkinkan untuk membangun sistem reminder kegiatan untuk membantu mengingatkan mahasiswa tentang kegiatannya.
+ <br>Untuk mengatasi permasalahan yang ditemukan, kami sebagai pengembang mencoba membangun aplikasi dengan nama IPB’s Event pada platform berbasis website. Aplikasi IPB’s Event memungkinkan untuk menampilkan semua kegiatan yang diselenggarakan oleh internal IPB University baik yang diselenggarakan oleh mahasiswa maupun pihak kampus IPB University seperti lomba, webinar, seminar, dan sebagainya. Mahasiswa dapat melihat kegiatan yang akan diselenggarakan berdasarkan waktu pelaksanaanya pada beranda IPB Event. Mahasiswa juga dapat mendaftarkan diri secara langsung di aplikasi tersebut sebagai peserta. Selain itu, Organisasi di IPB dapat mendaftarkan kegiatan yang akan diselenggarakannya sebagai panitia pelaksana kegiatan agar kegiatannya dapat terlihat pada aplikasi. Aplikasi IPB’s Event  juga mendukung adanya informasi kegiatan yang pendaftarannya dibuka pada hari itu .
 
 ## 2. User analysis 
 [`^ kembali ke atas ^`](#) 
@@ -144,7 +144,7 @@ Berikut adalah Controler yang diterapkan:
  <img height="800" src="https://user-images.githubusercontent.com/60084059/122012308-3aa58e80-cde7-11eb-851b-673923397350.png">
  
 ### 7.3. Class diagram
- <img height="1200" src="">
+ <img height="1200" src="https://user-images.githubusercontent.com/60084059/122148153-409d7d00-ce84-11eb-9865-7f6a58848e90.png">
 
 ### 7.4. Entity Relationship Diagram (ERD)
  <img height="800" src="https://user-images.githubusercontent.com/60084059/122012313-3aa58e80-cde7-11eb-93ad-2a0ca08f28f1.png">
