@@ -130,6 +130,10 @@ Fungsi utama yang di kembangkan dari IPB's Event adalah sebagai Organisasi dapat
 ## 8. Hasil Implementasi
 [`^ kembali ke atas ^`](#) 
 ### 8.1 Screenshot sistem
+![orglog](https://user-images.githubusercontent.com/60083962/122143827-72aae100-ce7c-11eb-8d47-0d81902c2487.png)
+![orgreg](https://user-images.githubusercontent.com/60083962/122143899-9706bd80-ce7c-11eb-8d19-5e93e15436a0.png)
+
+
 ### 8.2 Link Aplikasi (Jika sudah di deploy)
 
 ## 9. Saran untuk pengembangan selanjutnya
