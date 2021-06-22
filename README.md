@@ -99,7 +99,7 @@ class Org extends Authenticatable
 [`^ kembali ke atas ^`](#) 
 ### Model 
 Model merepresentasikan struktur data dan digunakan untuk berinteraksi dengan database. Komponen model ini bertugas untuk mengolah data seperti mendapatkan data, menyimpan data, mengedit data, dan menghapus data. Berikut adalah model yang diterapkan pada sistem IPB's Event
-* Model Event
+* Model Event 
 * Model Org
 * Model User
 
@@ -123,9 +123,9 @@ Berikut adalah penerapan View pada Organisasi Panitia Event
 * Halaman Edit Event : halaman yang digunakan oleh Organisasi untuk mengedit informasi dari kegiatan yang telah Organisasi buat
 
 
-### Controler 
-Controler berfungsi untuk menjebatani antara Model dengan View. Controler akan menerima dan memerespon respon yang datang dam nengubah ke dalam bentuk perintah terhadap view dan model.
-Berikut adalah Controler yang diterapkan:
+### Controller 
+Controller berfungsi untuk menjebatani antara Model dengan View. Controler akan menerima dan memerespon respon yang datang dam nengubah ke dalam bentuk perintah terhadap view dan model.
+Berikut adalah Controller yang diterapkan:
 * Auth Controller
 * Event Controller
 * Home Controller
@@ -161,6 +161,7 @@ Berikut adalah rancangan Activity Diagram dari sistem yang kami kembangkan. Acti
 
 ### 7.6. Fungsi utama yang di kembangkan
 Fungsi utama yang dikembangkan dari IPB's Event adalah sebagai Organisasi dapat mendaftarkan suatu kegiatannya pada aplikasi ini dan muncul pada beranda aplikasi kemudian sebagin user Mahasiswa dapat melihat dan mendaftarkan diri kegiatan yang ada di aplikasi ini.
+
 ### 7.7. Fungsi CRUD
 * Create : Organisasi dapat menambahkan kegiatan yang mereka selenggarakan.
 * Read : Menampilkan kegiatan yang di daftarkan Organisasi pada beranda.
@@ -170,21 +171,28 @@ Fungsi utama yang dikembangkan dari IPB's Event adalah sebagai Organisasi dapat 
 ## 8. Hasil Implementasi
 [`^ kembali ke atas ^`](#) 
 ### 8.1 Screenshot sistem
-* ORGANISASI
+* Organisasi
   * Page Login
 ![orglog](https://user-images.githubusercontent.com/60083962/122143827-72aae100-ce7c-11eb-8d47-0d81902c2487.png)
   * Page Register  
 ![orgreg](https://user-images.githubusercontent.com/60083962/122143899-9706bd80-ce7c-11eb-8d19-5e93e15436a0.png)
   * Page Home 
+  ![homeORG](https://user-images.githubusercontent.com/60084059/122903082-452cce80-d379-11eb-80df-9b55530357fa.png)
+  * Page Create Event
  ![homeORG](https://user-images.githubusercontent.com/60084059/122151525-eacbd380-ce89-11eb-8c68-9ac3302bcd43.png)
   * Page Deskripsi Event
  ![detailORG](https://user-images.githubusercontent.com/60084059/122151518-e8697980-ce89-11eb-9df7-d403d8cf05a3.png)
-
+  * Page Edit Event
+  
 
 * Mahasiswa
+  * Page Login
+  * Page Register
+  * Page Home
+  ![homeMHS](https://user-images.githubusercontent.com/60084059/122903121-4e1da000-d379-11eb-9137-483b2a73b47c.png)
   * Page Deskripsi Event
 ![detailMHS](https://user-images.githubusercontent.com/60084059/122151502-e0a9d500-ce89-11eb-838c-e12f10329dda.png)
-  * 
+  * Page Pendaftaran
   
 
 
@@ -198,10 +206,10 @@ Fungsi utama yang dikembangkan dari IPB's Event adalah sebagai Organisasi dapat 
 [`^ kembali ke atas ^`](#) 
  Nama |NIM | Jobdesk |
  :---:|:---:| :---:|
-Lathifah Kurnia K | G64180023 | Front End |
-Tia Isnawati Noor| G64180034 |  System Analyst|
-Ulfainil Aisyah |  G64180045 | Back End |
-Hana Salsabila |  G64180051 | Back End |
+Lathifah Kurnia K | G64180023 | Front End, Sistem Analyst, UI/UX Designer |
+Tia Isnawati Noor| G64180034 | System Analyst, UI/UX Designer |
+Ulfainil Aisyah |  G64180045 | Full Stack, UI/UX Designer|
+Hana Salsabila |  G64180051 | Project Manager, Full Stack, UI/UX Designer, Database|
 
 
 ## Dokumentasi
