@@ -184,16 +184,20 @@ Fungsi utama yang dikembangkan dari IPB's Event adalah sebagai Organisasi dapat 
   * Page Deskripsi Event
  ![detailORG](https://user-images.githubusercontent.com/60084059/122151518-e8697980-ce89-11eb-9df7-d403d8cf05a3.png)
   * Page Edit Event
+  ![Edit](https://user-images.githubusercontent.com/60084059/122910138-10704580-d380-11eb-8ce3-13608edfb706.jpg)
   
 
 * Mahasiswa
   * Page Login
+  ![LoginMhs](https://user-images.githubusercontent.com/60084059/122908583-79ef5480-d37e-11eb-9e54-43dd6a61008b.jpg)
+
   * Page Register
+  ![RegMhs](https://user-images.githubusercontent.com/60084059/122908582-7956be00-d37e-11eb-8dfd-603b3ffa46e2.jpg)
+
   * Page Home
   ![homeMHS](https://user-images.githubusercontent.com/60084059/122903121-4e1da000-d379-11eb-9137-483b2a73b47c.png)
   * Page Deskripsi Event
 ![detailMHS](https://user-images.githubusercontent.com/60084059/122151502-e0a9d500-ce89-11eb-838c-e12f10329dda.png)
-  * Page Pendaftaran
   
 
 
@@ -223,11 +227,11 @@ Hana Salsabila |  G64180051 | Project Manager, Full Stack, UI/UX Designer, Datab
 
 ## Referensi
 [`^ kembali ke atas ^`](#) 
+<br>
 [MVC](https://medium.com/@sagarmaheshwary31/laravel-5-8-from-scratch-intro-setup-mvc-basics-and-views-74d46f93fe0c) 
 [Model](https://www.iltekkomputer.com/tutorial-laravel-5-7-part-3-cara-memahami-konsep-mvc-di-framework-laravel/) 
 [MVC](https://www.codetutors.org/what-mvc-is-and-how-does-this-pattern-work-in-laravel-8/)
 [MVC](https://www.niagahoster.co.id/blog/mvc-adalah)
-
 [Konsep OOP](http://repository.uinsu.ac.id/9202/1/2.%20Suendri%20-%20Modul%20Praktikum%20PBWL%202020.pdf)
 [Konsep OOP](https://glints.com/id/lowongan/oop-adalah/#.YMjzgGgza01)
 [Konsep OOP - Inheritage](https://www.dicoding.com/blog/apa-itu-oop-pada-java-beserta-contohnya/)
