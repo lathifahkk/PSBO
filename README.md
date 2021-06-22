@@ -161,7 +161,7 @@ Berikut adalah rancangan Activity Diagram dari sistem yang kami kembangkan. Acti
 
 ### 7.6. Fungsi utama yang di kembangkan
 Fungsi utama yang dikembangkan dari IPB's Event adalah sebagai Organisasi dapat mendaftarkan suatu kegiatannya pada aplikasi ini dan muncul pada beranda aplikasi kemudian sebagin user Mahasiswa dapat melihat dan mendaftarkan diri kegiatan yang ada di aplikasi ini.
-### 7.8. Fungsi CRUD
+### 7.7. Fungsi CRUD
 * Create : Organisasi dapat menambahkan kegiatan yang mereka selenggarakan.
 * Read : Menampilkan kegiatan yang di daftarkan Organisasi pada beranda.
 * Update : Organisasi dapat mensunting informasi dari kegiatan yang mereka daftarkan.
