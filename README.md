@@ -10,7 +10,7 @@
 
 ## 1. Deskripsi singkat aplikasi
 [`^ kembali ke atas ^`](#) 
- <br>Untuk mengatasi permasalahan yang ditemukan, kami sebagai pengembang mencoba membangun aplikasi dengan nama IPB’s Event pada platform berbasis website. Aplikasi IPB’s Event memungkinkan untuk menampilkan semua kegiatan yang diselenggarakan oleh internal IPB University baik yang diselenggarakan oleh mahasiswa maupun pihak kampus IPB University seperti lomba, webinar, seminar, dan sebagainya. Mahasiswa dapat melihat kegiatan yang akan diselenggarakan berdasarkan waktu pelaksanaanya pada beranda IPB Event. Mahasiswa juga dapat mendaftarkan diri secara langsung di aplikasi tersebut sebagai peserta. Selain itu, Organisasi di IPB dapat mendaftarkan kegiatan yang akan diselenggarakannya sebagai panitia pelaksana kegiatan agar kegiatannya dapat terlihat pada aplikasi. Aplikasi IPB’s Event  juga mendukung adanya informasi kegiatan yang pendaftarannya dibuka pada hari itu .
+ <br>Untuk mengatasi permasalahan yang ditemukan, kami sebagai pengembang mencoba membangun aplikasi dengan nama IPB’s Event pada platform berbasis website. Aplikasi IPB’s Event memungkinkan untuk menampilkan semua kegiatan yang diselenggarakan oleh internal IPB University baik yang diselenggarakan oleh mahasiswa maupun pihak kampus IPB University seperti lomba, webinar, seminar, dan sebagainya. Mahasiswa dapat melihat kegiatan yang akan diselenggarakan berdasarkan waktu pelaksanaanya pada beranda IPB Event. Mahasiswa juga dapat mendaftarkan diri secara langsung di aplikasi tersebut sebagai peserta. Selain itu, Organisasi di IPB dapat mendaftarkan kegiatan yang akan diselenggarakannya sebagai panitia pelaksana kegiatan agar kegiatannya dapat terlihat pada aplikasi. Aplikasi IPB’s Event  juga mendukung adanya informasi kegiatan yang pendaftarannya dibuka pada hari itu.
 
 ## 2. User analysis 
 [`^ kembali ke atas ^`](#) 
@@ -40,7 +40,6 @@ Berikut perangkat lunak yang digunakan untuk mengembangkan IPB's Event :
 ### 4.2. Hardware
 Berikut spesifikasi laptop yang digunakan untuk mengembangkan IPB's Event :
 * Processor: Intel Core i5-6200U CPU @ 2.30GHz 2.40
-* GPU: 
 * RAM: 8.00GB
 * OS: Windows 10
 
@@ -51,7 +50,6 @@ Berikut spesifikasi laptop yang digunakan untuk mengembangkan IPB's Event :
   * Framework : Laravel
   * Web Server : XAMPP
   * DBMS : MYSQL
-
 
 
 ## 5. Konsep OOP yang digunakan
@@ -125,7 +123,6 @@ Berikut adalah penerapan View pada Organisasi Panitia Event
 * Halaman Edit Event : halaman yang digunakan oleh Organisasi untuk mengedit informasi dari kegiatan yang telah Organisasi buat
 
 
-
 ### Controler 
 Controler berfungsi untuk menjebatani antara Model dengan View. Controler akan menerima dan memerespon respon yang datang dam nengubah ke dalam bentuk perintah terhadap view dan model.
 Berikut adalah Controler yang diterapkan:
@@ -138,9 +135,11 @@ Berikut adalah Controler yang diterapkan:
 ## 7. Hasil dan Pembahasan
 [`^ kembali ke atas ^`](#) 
 ### 7.1. Use case diagram 
+Berikut adalah rancangan Use Case dari sistem yang kami kembangkan. Use Case ini terdiri dari 2 aktor yaitu Mahasiswa dan Organisasi atau Panitia Event
  <img src="https://user-images.githubusercontent.com/60084059/122012302-38dbcb00-cde7-11eb-8c3e-d0137e08b7ea.png">
 
 ### 7.2. Activity diagram
+Berikut adalah rancangan Activity Diagram dari sistem yang kami kembangkan. Activity Diagram yang kami buat kami bagi menjadi 2 sisi, yaitu dari sisi Mahasiswa dan sisi Organisasi.
 * Mahasiswa
  <img height="800" src="https://user-images.githubusercontent.com/60084059/122012305-3a0cf800-cde7-11eb-9db4-bacac2340d79.png">
 
@@ -189,8 +188,6 @@ Fungsi utama yang dikembangkan dari IPB's Event adalah sebagai Organisasi dapat 
   
 
 
-### 8.2 Link Aplikasi (Jika sudah di deploy)
-
 ## 9. Saran untuk pengembangan selanjutnya
 [`^ kembali ke atas ^`](#) 
 * Menambahkan opsi tiket kegiaatan berbayar dan menambahkan mekanisme pembayaran
@@ -201,10 +198,10 @@ Fungsi utama yang dikembangkan dari IPB's Event adalah sebagai Organisasi dapat 
 [`^ kembali ke atas ^`](#) 
  Nama |NIM | Jobdesk |
  :---:|:---:| :---:|
-Lathifah Kurnia K | G64180023 | |
-Tia Isnawati Noor| G64180034 | |
-Ulfainil Aisyah |  G64180045 | 
-Hana Salsabila |  G64180051 | |
+Lathifah Kurnia K | G64180023 | Front End |
+Tia Isnawati Noor| G64180034 |  System Analyst|
+Ulfainil Aisyah |  G64180045 | Back End |
+Hana Salsabila |  G64180051 | Back End |
 
 
 ## Dokumentasi
@@ -212,6 +209,7 @@ Hana Salsabila |  G64180051 | |
  <br>
 * [Figma](https://www.figma.com/file/v85RjAcrhUs8eYjj5TVxZ0/PSBO-JAYA!)
 * [Trello](https://trello.com/b/0LYTtp0B/psbo-jaya)
+* [Draw,io](https://app.diagrams.net/#G1-piRn1aYgA6oMaIT3HS1CoyRe86llh3A)
 
 
 ## Referensi
