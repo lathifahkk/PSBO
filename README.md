@@ -135,7 +135,8 @@ Berikut adalah Controller yang diterapkan:
 ## 7. Hasil dan Pembahasan
 [`^ kembali ke atas ^`](#) 
 ### 7.1. Use case diagram 
-Berikut adalah rancangan Use Case dari sistem yang kami kembangkan. Use Case ini terdiri dari 2 aktor yaitu Mahasiswa dan Organisasi atau Panitia Event
+Berikut adalah rancangan Use Case dari sistem yang kami kembangkan. Use Case ini terdiri dari 2 aktor yaitu Mahasiswa dan Organisasi atau Panitia Event.
+
  <img src="https://user-images.githubusercontent.com/60084059/122012302-38dbcb00-cde7-11eb-8c3e-d0137e08b7ea.png">
 
 ### 7.2. Activity diagram
@@ -154,10 +155,10 @@ Berikut adalah rancangan Activity Diagram dari sistem yang kami kembangkan. Acti
 
 ### 7.5. Arsitektur Sistem
 ![image](https://user-images.githubusercontent.com/60084059/122150563-28c7f800-ce88-11eb-8fad-17943e36ad49.png)
-- User melakukan reuest ke Controler
-- Controler akan menghubungin Model untuk berinteraksi dengan Data Base
-- Kemudian Controler akan merender Respon ke view 
-- kemudian terpresentasikan pada user
+- User melakukan request ke Controler
+- Controler akan menghubungin Model untuk berinteraksi dengan Database
+- Kemudian Controler akan merender Respon ke View 
+- Kemudian terpresentasikan pada user
 
 ### 7.6. Fungsi utama yang di kembangkan
 Fungsi utama yang dikembangkan dari IPB's Event adalah sebagai Organisasi dapat mendaftarkan suatu kegiatannya pada aplikasi ini dan muncul pada beranda aplikasi kemudian sebagin user Mahasiswa dapat melihat dan mendaftarkan diri kegiatan yang ada di aplikasi ini.
