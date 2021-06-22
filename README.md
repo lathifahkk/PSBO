@@ -99,9 +99,9 @@ class Org extends Authenticatable
 [`^ kembali ke atas ^`](#) 
 ### Model 
 Model merepresentasikan struktur data dan digunakan untuk berinteraksi dengan database. Komponen model ini bertugas untuk mengolah data seperti mendapatkan data, menyimpan data, mengedit data, dan menghapus data. Berikut adalah model yang diterapkan pada sistem IPB's Event
-* Model Event 
-* Model Org
-* Model User
+* Model Event : Pada model ini terdapat informasi yang dibutuhkan mengenai event seperti primary key data dan hak akses data.
+* Model Org : Pada model ini terdapat informasi mengenai data yang perlu dilengkapi seperti nama, email, lembaga, password yang akan dibutuhkan saat registrasi dan login sebagai organisasi, selain itu juga didefinisikan hak akses terhadap data-data tersebut.
+* Model User : Pada model ini terdapat informasi user atau mahasiswa mengenai data yang diperlukan untuk registrasi dan login seperti nama, email, password dan juga terdapat hak akses terhadap data tersebut.
 
 
 ### View
